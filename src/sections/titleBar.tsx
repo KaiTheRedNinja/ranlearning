@@ -1,6 +1,6 @@
 'use client';
 
-import { Flag, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button"
 import {
@@ -18,8 +18,38 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
 export default function TitleBar() {
-  const sectionNavigator = (
+  const langSwitcher = (
+    // TODO: Make this a real language switcher
+    <Button variant="secondary">
+      🇨🇳 ZH
+    </Button>
+  )
+
+  const sectionHorizontalNavigator = (
+    <div className="flex items-center gap-6">
+      <Button variant="link">Home</Button>
+      <Button variant="link">About Us</Button>
+      <Button variant="link">Programmes and Courses</Button>
+      <Button variant="link">Testimonials</Button>
+      <Button variant="link">Blog</Button>
+      <Button variant="link">Contact Us</Button>
+      <Button variant="link">FAQ</Button>
+      <Button variant="default">Register</Button>
+    </div>
+  )
+
+  const sectionMenuNavigator = (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline"><Menu className="w-6 h-6 text-gray-700" /></Button>
@@ -65,13 +95,19 @@ export default function TitleBar() {
         <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
         <h1 className="text-2xl font-semibold text-gray-800">Ran Learning</h1>
       </div>
+
+      {/* Middle: Horizontal Navigator, but only for large screens */}
+      <div className="hidden lg:flex">
+        {sectionHorizontalNavigator}
+      </div>
       
       {/* Right side: Flag + Hamburger */}
       <div className="flex items-center gap-4">
-        <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
-          <Flag className="w-6 h-6 text-gray-700" />
-        </button>
-        {sectionNavigator}
+        {langSwitcher}
+
+        <div className="lg:hidden">
+          {sectionMenuNavigator}
+        </div>
       </div>
     </div>
   );
