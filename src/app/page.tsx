@@ -1,102 +1,120 @@
-import Image from "next/image";
+'use client';
+
+import Card from "../components/card";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="" style={{ backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+      <h1 className="px-8 text-3xl font-bold mb-8">Card Component Demo</h1>
+      
+      {/* Single cards with various configurations */}
+      <div className="px-8 mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Full Featured Card</h2>
+        <Card
+          image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop"
+          icon="https://api.dicebear.com/7.x/shapes/svg?seed=1"
+          trailingIcon="https://api.dicebear.com/7.x/icons/svg?seed=arrow"
+          title="Mountain Adventure"
+          description="Discover breathtaking views and unforgettable experiences in the heart of nature. Join us for an incredible journey through stunning landscapes, where every moment brings new discoveries and lasting memories. This adventure will take you to places you've never imagined, with expert guides ensuring your safety and enjoyment throughout the entire trip."
+          onClick={() => alert('Card clicked!')}
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            This website is under construction
-          </li>
-          <li className="tracking-[-.01em]">
-            <a href="https://ranlearning.com" className="underline" target="_blank" rel="noopener noreferrer">
-              <code>ranlearning.com</code>
-            </a>
-            (this website)
-          </li>
-        </ol>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="px-8 mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Minimal Card (Title Only)</h2>
+        <Card
+          title="Simple Design"
+          showMore={false}
+        />
+      </div>
+
+      <div className="px-8 mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Card with Custom Colors</h2>
+        <Card
+          title="Custom Themed Card"
+          icon="https://api.dicebear.com/7.x/shapes/svg?seed=2"
+          description="This card demonstrates custom color options including background, title, body text, and see more link colors."
+          backgroundColor="#1a1a2e"
+          titleColor="#eee"
+          bodyColor="#ccc"
+          seeMoreColor="#16c79a"
+        />
+      </div>
+
+      {/* Horizontal scroll view */}
+      <div className="mb-8">
+        <h2 className="px-8 text-2xl font-semibold mb-4">Horizontal Scroll View</h2>
+        <div className="overflow-x-auto">
+          <div className="flex gap-4 px-8 pb-4" style={{ width: 'max-content' }}>
+            <div style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                image="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop"
+                icon="https://api.dicebear.com/7.x/shapes/svg?seed=3"
+                title="Forest Exploration"
+                description="Embark on a journey through ancient forests filled with towering trees and hidden wonders."
+                backgroundColor="#f0f9ff"
+                titleColor="#0c4a6e"
+                bodyColor="#475569"
+                onClick={() => alert('Forest card clicked!')}
+              />
+            </div>
+            
+            <div style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=400&fit=crop"
+                trailingIcon="https://api.dicebear.com/7.x/icons/svg?seed=star"
+                title="Beach Paradise"
+                description="Experience the perfect getaway with crystal clear waters and golden sandy beaches that stretch as far as the eye can see."
+                backgroundColor="#fffbeb"
+                titleColor="#92400e"
+                bodyColor="#78716c"
+                seeMoreColor="#ea580c"
+              />
+            </div>
+            
+            <div style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=400&fit=crop"
+                icon="https://api.dicebear.com/7.x/shapes/svg?seed=4"
+                trailingIcon="https://api.dicebear.com/7.x/icons/svg?seed=check"
+                title="Desert Safari"
+                description="Venture into vast desert landscapes where adventure awaits at every dune and sunset paints the sky in magnificent colors."
+                backgroundColor="#fef2f2"
+                titleColor="#7f1d1d"
+                bodyColor="#57534e"
+              />
+            </div>
+            
+            <div style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                image="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=400&fit=crop"
+                icon="https://api.dicebear.com/7.x/shapes/svg?seed=5"
+                title="Arctic Expedition"
+                description="Journey to the far north where ice and snow create a pristine wilderness unlike anywhere else on Earth. Witness the northern lights dance across the sky."
+                backgroundColor="#f0fdf4"
+                titleColor="#14532d"
+                bodyColor="#44403c"
+                seeMoreColor="#15803d"
+                onClick={() => alert('Arctic card clicked!')}
+              />
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className="px-8 mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Card Without Image</h2>
+        <Card
+          icon="https://api.dicebear.com/7.x/shapes/svg?seed=6"
+          trailingIcon="https://api.dicebear.com/7.x/icons/svg?seed=info"
+          title="Text-Only Content"
+          description="This card demonstrates how the component looks without a header image, focusing entirely on the text content and icons."
+          backgroundColor="#faf5ff"
+          titleColor="#581c87"
+          bodyColor="#6b7280"
+          seeMoreColor="#7c3aed"
+        />
+      </div>
     </div>
   );
 }
