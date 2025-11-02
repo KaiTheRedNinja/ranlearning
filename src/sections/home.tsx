@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="" style={{ backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+    <div className="" style={{ backgroundColor: '#fff', minHeight: '100vh' }}>
       {/* image, ratio of 1.6 */}
       <ImageCarousel />
 
