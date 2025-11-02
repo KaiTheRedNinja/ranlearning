@@ -3,6 +3,7 @@
 import TitleBar from "@/sections/titleBar";
 import Home from "@/sections/home";
 import About from "@/sections/about";
+import Courses from "@/sections/courses";
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
       <Home />
       <hr className="my-0 border-t border-gray-300" />
       <About />
+      <hr className="my-0 border-t border-gray-300" />
+      <Courses />
     </div>
   );
 }
