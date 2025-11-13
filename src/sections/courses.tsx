@@ -4,7 +4,7 @@ import Card from "@/components/card"
 
 export default function Courses() {
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: '#fff', minHeight: '100vh' }}>
+    <div className="flex flex-col gap-6" style={{ backgroundColor: '#fff' }}>
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">课程介绍</h2>
       </div>
@@ -70,7 +70,7 @@ export default function Courses() {
         </div>
       </div>
 
-      <div className="mx-auto w-full flex flex-col items-center">
+      <div className="mx-auto w-full flex flex-col items-center mb-8">
         <div
           className="flex-shrink-0 overflow-hidden rounded-full"
           style={{

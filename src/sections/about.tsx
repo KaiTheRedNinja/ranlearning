@@ -2,7 +2,7 @@ import Card from "@/components/card";
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+    <div className="flex flex-col gap-6" style={{ backgroundColor: '#f5f5f5' }}>
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">公司愿景、教育理念、办学特色</h2>
       </div>
