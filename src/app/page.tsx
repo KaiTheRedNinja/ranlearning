@@ -7,6 +7,7 @@ import Courses from "@/sections/courses";
 import Testimonials from "@/sections/testimonials";
 import Blog from "@/sections/blog";
 import Contact from "@/sections/contact";
+import FAQ from "@/sections/faq";
 
 export default function App() {
   return (
@@ -29,6 +30,8 @@ export default function App() {
       <Blog />
       <hr className="my-0 border-t border-gray-300" />
       <Contact />
+      <hr className="my-0 border-t border-gray-300" />
+      <FAQ />
     </div>
   );
 }
