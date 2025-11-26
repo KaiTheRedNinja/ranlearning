@@ -5,6 +5,7 @@ import Home from "@/sections/home";
 import About from "@/sections/about";
 import Courses from "@/sections/courses";
 import Testimonials from "@/sections/testimonials";
+import Blog from "@/sections/blog";
 
 export default function App() {
   return (
@@ -23,6 +24,8 @@ export default function App() {
       <Courses />
       <hr className="my-0 border-t border-gray-300" />
       <Testimonials />
+      <hr className="my-0 border-t border-gray-300" />
+      <Blog />
     </div>
   );
 }
