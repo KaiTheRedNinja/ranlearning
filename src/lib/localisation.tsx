@@ -25,7 +25,9 @@ interface LocalizedContent {
       name: string
       description: string
       icon: string
-    }[]
+    }[],
+    teachingTeamTitle: string
+    teachingTeam: string
   };
   coursesSection: {
     courseSummary: string
@@ -106,7 +108,9 @@ const translations: Record<Language, LocalizedContent> = {
           description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
           icon: "/globe.svg"
         }
-      ]
+      ],
+      teachingTeamTitle: "Our Teachers",
+      teachingTeam: "Teaching Team Introduction (brief overview, no need for individual details) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     coursesSection: {
       courseSummary: "Brief recap of Ran Learning's teaching style, include mentions of 小学华文补习  /  中学华文 / JC H1华文 IBDP中文 (each will be links)",
@@ -158,13 +162,13 @@ const translations: Record<Language, LocalizedContent> = {
         {
           title: "Testimonial Title 1",
           description: "Testimonial description goes here.",
-          image: "/path/to/image.jpg",
+          image: "/globe.svg",
           imageOnLeft: true
         },
         {
           title: "Testimonial Title 2",
           description: "Testimonial description goes here.",
-          image: "/path/to/image.jpg",
+          image: "/globe.svg",
           imageOnLeft: false
         }
       ]
@@ -172,17 +176,17 @@ const translations: Record<Language, LocalizedContent> = {
     blogSection: {
       blogItems: [
         {
-          title: "Blog Post 1",
+          title: "如何在家提升孩子华文1",
           shortDescription: "Short description of blog post 1.",
           fullContentLink: "/blog/post-1"
         },
         {
-          title: "Blog Post 1",
+          title: "新加坡考试制度变化",
           shortDescription: "Short description of blog post 1.",
           fullContentLink: "/blog/post-1"
         },
         {
-          title: "Blog Post 1",
+          title: "免费下载",
           shortDescription: "Short description of blog post 1.",
           fullContentLink: "/blog/post-1"
         }
@@ -239,45 +243,57 @@ const translations: Record<Language, LocalizedContent> = {
     homeSection: {
       briefIntroduction: "Brief Introduction Goes Here ...",
       schoolFeatures: [
-        "Feature 1",
-        "Feature 2",
-        "Feature 3"
+        "学校特色/优势 1",
+        "学校特色/优势 2",
+        "学校特色/优势 3"
       ]
     },
     aboutSection: {
       approaches: [
         {
-          name: "APPROACH 1",
+          name: "全人教育",
           description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
           icon: "/globe.svg"
         },
         {
-          name: "APPROACH 2",
+          name: "双语优势",
+          description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
+          icon: "/globe.svg"
+        },
+        {
+          name: "小班制",
+          description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
+          icon: "/globe.svg"
+        },
+        {
+          name: "互动式教学",
           description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
           icon: "/globe.svg"
         }
-      ]
+      ],
+      teachingTeamTitle: "教师团队",
+      teachingTeam: "教师团队简介（粗略介绍，不需要详细到个人）Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
     },
     coursesSection: {
       courseSummary: "Brief recap of Ran Learning's teaching style, include mentions of 小学华文补习  /  中学华文 / JC H1华文 IBDP中文 (each will be links)",
       specialProgrameTitle: "Special Programmes",
       specialProgrammes: [
         {
-          title: "Holiday Classes",
+          title: "假期班课程",
           description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           backgroundColor: "#f0f9ff",
           titleColor: "#0c4a6e",
           bodyColor: "#475569"
         },
         {
-          title: "One-on-One Customised Tutoring",
+          title: "一对一私人定制",
           description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           backgroundColor: "#fffbeb",
           titleColor: "#92400e",
           bodyColor: "#78716c"
         },
         {
-          title: "Business Chinese",
+          title: "商务中文",
           description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           backgroundColor: "#fef2f2",
           titleColor: "#7f1d1d",
@@ -306,15 +322,15 @@ const translations: Record<Language, LocalizedContent> = {
       ],
       longReviews: [
         {
-          title: "Testimonial Title 1",
+          title: "考试成绩进步案例",
           description: "Testimonial description goes here.",
-          image: "/path/to/image.jpg",
+          image: "/globe.svg",
           imageOnLeft: true
         },
         {
-          title: "Testimonial Title 2",
+          title: "考试成绩进步案例",
           description: "Testimonial description goes here.",
-          image: "/path/to/image.jpg",
+          image: "/globe.svg",
           imageOnLeft: false
         }
       ]
@@ -365,7 +381,15 @@ const translations: Record<Language, LocalizedContent> = {
     faqSection: {
       questionsAndAnswers: [
         {
-          question: "QUESTION GOES HERE",
+          question: "课程如何安排？",
+          answer: "ANSWER GOES HERE"
+        },
+        {
+          question: "学费怎么支付？",
+          answer: "ANSWER GOES HERE"
+        },
+        {
+          question: "如果缺课怎么办？",
           answer: "ANSWER GOES HERE"
         }
       ]

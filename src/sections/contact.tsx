@@ -1,10 +1,14 @@
 'use client';
 
+import { useLanguage } from "@/lib/localisation";
+
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <div className="flex flex-col gap-6" style={{ backgroundColor: '#f5f5f5' }}>
       <div className="px-6 mt-8">
-        <h2 className="text-3xl font-bold">报名与联络</h2>
+        <h2 className="text-3xl font-bold">{t.sectionTitles.contactUs}</h2>
       </div>
 
       <div className="px-12 gap-4 flex flex-col">
@@ -25,7 +29,7 @@ export default function Contact() {
               lineHeight: '1.2'
             }}
           >
-            立即报名
+            {t.registerNow}
           </h1>
         </div>
       </div>
@@ -35,10 +39,11 @@ export default function Contact() {
       </div>
 
       <div className="px-6 mb-8 flex flex-col gap-1">
-        <p className="text-xl"><b>💌 Email</b>: XXXXXX@XXXXX</p>
-        <p className="text-xl"><b>☎️ Phone</b>: +65 XXXX XXXX</p>
-        <p className="text-xl"><b>💬 WhatsApp</b>: +65 XXXX XXXX</p>
-        <p className="text-xl"><b>🏠 Address</b>: XXXXXXXXX</p>
+        {t.contactSection.contactItems.map((item, index) => (
+          <p key={index} className="text-xl">
+            <b>{item.icon} {item.contactMethod}</b>: {item.detail}
+          </p>
+        ))}
       </div>
     </div>
   );

@@ -1,18 +1,6 @@
 import React from 'react';
 
-export default function ScrollingReviews() {
-  const reviews = [
-    "家长对孩子进步的反馈1",
-    "家长对孩子进步的反馈2",
-    "家长对孩子进步的反馈3",
-    "家长对孩子进步的反馈4",
-    "家长对孩子进步的反馈5",
-    "家长对孩子进步的反馈6",
-    "家长对孩子进步的反馈7",
-    "家长对孩子进步的反馈8",
-    "家长对孩子进步的反馈9",
-  ]
-
+export default function ScrollingReviews({ reviews }: { reviews: string[] }) {
   const reviewsPerRow = 3;
   const rows = Math.ceil(reviews.length / reviewsPerRow);
 

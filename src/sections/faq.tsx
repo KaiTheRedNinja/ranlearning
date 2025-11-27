@@ -6,40 +6,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { useLanguage } from "@/lib/localisation";
 
 export default function FAQ() {
+  const { t } = useLanguage();
+
   return (
     <div className="flex flex-col gap-6" style={{ backgroundColor: '#fff' }}>
       <div className="px-6 mt-8">
-        <h2 className="text-3xl font-bold">FAQ</h2>
+        <h2 className="text-3xl font-bold">{t.sectionTitles.faq}</h2>
       </div>
 
       <div className="px-6 gap-4 flex flex-col mb-8">
         <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>课程如何安排？</AccordionTrigger>
-            <AccordionContent>
-              ANSWER GOES HERE
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>学费怎么支付？</AccordionTrigger>
-            <AccordionContent>
-              ANSWER GOES HERE
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>可以试听吗？</AccordionTrigger>
-            <AccordionContent>
-              ANSWER GOES HERE
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>如果缺课怎么办？</AccordionTrigger>
-            <AccordionContent>
-              ANSWER GOES HERE
-            </AccordionContent>
-          </AccordionItem>
+          {t.faqSection.questionsAndAnswers.map((qa, index) => (
+            <AccordionItem value={`item-${index}`}>
+              <AccordionTrigger>{qa.question}</AccordionTrigger>
+              <AccordionContent>
+                {qa.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
     </div>

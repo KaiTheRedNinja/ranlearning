@@ -60,31 +60,31 @@ export default function TitleBar() {
       <DropdownMenuContent className="w-56" align="start">
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            Home
+            {t.sectionTitles.home}
           </DropdownMenuItem>
           <DropdownMenuItem>
-            About Us
+            {t.sectionTitles.aboutUs}
           </DropdownMenuItem>
           <DropdownMenuItem>
-            Programmes and Courses
+            {t.sectionTitles.programmesAndCourses}
           </DropdownMenuItem>
           <DropdownMenuItem>
-            Testimonials
+            {t.sectionTitles.testimonials}
           </DropdownMenuItem>
           <DropdownMenuItem>
-            Blog
+            {t.sectionTitles.blog}
           </DropdownMenuItem>
           <DropdownMenuItem>
-            Contact Us
+            {t.sectionTitles.contactUs}
           </DropdownMenuItem>
           <DropdownMenuItem>
-            FAQ
+            {t.sectionTitles.faq}
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            Register
+            {t.registerNow}
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
@@ -96,7 +96,7 @@ export default function TitleBar() {
       {/* Left side: Circle + Title */}
       <div className="flex items-center gap-5">
         <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
-        <h1 className="text-2xl font-semibold text-gray-800">Ran Learning</h1>
+        <h1 className="text-2xl font-semibold text-gray-800">{t.ranlearning}</h1>
       </div>
 
       {/* Middle: Horizontal Navigator, but only for large screens */}
