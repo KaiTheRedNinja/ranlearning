@@ -15,7 +15,6 @@ interface LocalizedContent {
     blog: string
     contactUs: string
     faq: string
-    register: string
   };
   homeSection: {
     briefIntroduction: string
@@ -85,8 +84,7 @@ const translations: Record<Language, LocalizedContent> = {
       testimonials: "Testimonials",
       blog: "Blog",
       contactUs: "Contact Us",
-      faq: "FAQ",
-      register: "Register"
+      faq: "FAQ"
     },
     homeSection: {
       briefIntroduction: "Brief Introduction Goes Here ...",
@@ -228,16 +226,15 @@ const translations: Record<Language, LocalizedContent> = {
   },
   zh: {
     ranlearning: "Ran Learning",
-    registerNow: "Register NOW",
+    registerNow: "立即报名!",
     sectionTitles: {
-      home: "Home",
-      aboutUs: "About Us",
-      programmesAndCourses: "Programmes and Courses",
-      testimonials: "Testimonials",
-      blog: "Blog",
-      contactUs: "Contact Us",
-      faq: "FAQ",
-      register: "Register"
+      home: "首页",
+      aboutUs: "公司愿景、教育理念、办学特色",
+      programmesAndCourses: "课程介绍",
+      testimonials: "家长见证",
+      blog: "资源中心",
+      contactUs: "报名与联络",
+      faq: "FAQ"
     },
     homeSection: {
       briefIntroduction: "Brief Introduction Goes Here ...",

@@ -27,25 +27,28 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { useLanguage } from "@/lib/localisation";
 
 export default function TitleBar() {
+  const { language, setLanguage, t } = useLanguage();
+
   const langSwitcher = (
     // TODO: Make this a real language switcher
-    <Button variant="secondary">
-      🇨🇳 ZH
+    <Button variant="secondary" onClick={() => setLanguage(language === 'en' ? 'zh' : 'en')}>
+      {language === 'zh' ? '🇬🇧 EN' : '🇨🇳 ZH'}
     </Button>
   )
 
   const sectionHorizontalNavigator = (
     <div className="flex items-center gap-6">
-      <Button variant="link">Home</Button>
-      <Button variant="link">About Us</Button>
-      <Button variant="link">Programmes and Courses</Button>
-      <Button variant="link">Testimonials</Button>
-      <Button variant="link">Blog</Button>
-      <Button variant="link">Contact Us</Button>
-      <Button variant="link">FAQ</Button>
-      <Button variant="default">Register</Button>
+      <Button variant="link">{t.sectionTitles.home}</Button>
+      <Button variant="link">{t.sectionTitles.aboutUs}</Button>
+      <Button variant="link">{t.sectionTitles.programmesAndCourses}</Button>
+      <Button variant="link">{t.sectionTitles.testimonials}</Button>
+      <Button variant="link">{t.sectionTitles.blog}</Button>
+      <Button variant="link">{t.sectionTitles.contactUs}</Button>
+      <Button variant="link">{t.sectionTitles.faq}</Button>
+      <Button variant="default">{t.registerNow}</Button>
     </div>
   )
 
