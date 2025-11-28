@@ -38,9 +38,9 @@ export default function Contact() {
         <hr className="my-0 border-t border-black w-[100px]" />
       </div>
 
-      <div className="px-6 mb-8 flex flex-col gap-1">
+      <div className="px-6 mb-8 flex flex-col gap-3">
         {t.contactSection.contactItems.map((item, index) => (
-          <p key={index} className="text-xl">
+          <p key={index} className="text-xl whitespace-pre-line">
             <b>{item.icon} {item.contactMethod}</b>: {item.detail}
           </p>
         ))}

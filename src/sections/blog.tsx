@@ -14,6 +14,7 @@ export default function Blog() {
 
       <div className="px-6 gap-4 flex flex-col mb-8">
         {t.blogSection.blogItems.map((item, index) => (
+          <div key={index}>
           <Card
             title={item.title}
             trailingIcon="open-in-new.svg"
@@ -23,6 +24,7 @@ export default function Blog() {
             backgroundColor="#ECB34F"
             titleColor="#523211"
           />
+          </div>
         ))}
       </div>
     </div>

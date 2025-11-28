@@ -13,11 +13,16 @@ const zhContent: LocalizedContent = {
     faq: "FAQ"
   },
   homeSection: {
-    briefIntroduction: "Brief Introduction Goes Here ...",
+    briefIntroduction: `\
+在 Ran Enrichment Learning，我们专注于为学生提供高效、系统化的华文提升课程，涵盖写作、阅读理解、语言应用与口试表达等关键能力。
+
+我们熟悉本地O水准、IP 课程、IBDP课程，以及JC课程需求，也深谙考试趋势，通过技巧教学、写作框架训练及批判性思维培养，帮助学生在考试中脱颖而出。
+
+我们的目标不只是提高分数，更让学生具备自信表达、深入思考的能力，为学生的未来学习做好准备。`,
     schoolFeatures: [
-      "学校特色/优势 1",
-      "学校特色/优势 2",
-      "学校特色/优势 3"
+      "图片",
+      "简短介绍  ",
+      "学校特色、优势（要点)"
     ]
   },
   aboutSection: {
@@ -131,22 +136,27 @@ const zhContent: LocalizedContent = {
       {
         contactMethod: "Email",
         icon: "💌",
-        detail: "XXXXXXXX"
+        detail: "ranlearninghub@gmail.com"
       },
       {
         contactMethod: "Phone",
         icon: "☎️",
-        detail: "XXXXXXXX"
+        detail: "89891582"
       },
       {
         contactMethod: "WhatsApp",
         icon: "💬",
-        detail: "XXXXXXXX"
+        detail: "89891582 (10AM - 9PM)"
       },
       {
-        contactMethod: "Address",
+        contactMethod: "Addresses",
         icon: "🏠",
-        detail: "XXXXXXXX"
+        detail: `
+- 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
+
+- #02-06 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
+
+- 709A East Coast Road S459064, Kinder Growth Learning Centre & 冉老师华文课堂`
       },
     ]
   },

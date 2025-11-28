@@ -51,7 +51,7 @@ export default function Card({
       )}
       
       <div className="p-6">
-        <div className="flex items-center gap-3 mb-2">
+        <div className="flex items-center gap-3">
           {icon && (
             <img
               src={icon}
@@ -84,7 +84,7 @@ export default function Card({
         
         {description && (
           <p
-            className="mb-3"
+            className="mt-3"
             style={{
               fontSize: '16px',
               color: bodyColor,
@@ -102,7 +102,7 @@ export default function Card({
         
         {showMore && (
           <div
-            className="font-bold"
+            className="font-bold mt-3"
             style={{
               fontSize: '20px',
               color: seeMoreColor,

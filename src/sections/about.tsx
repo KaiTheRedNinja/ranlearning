@@ -12,13 +12,15 @@ export default function About() {
 
       <div className="px-6 gap-4 flex flex-col">
         {t.aboutSection.approaches.map((approach, index) => (
+          <div key={index}>
           <Card
             title={approach.name}
             icon={approach.icon}
-            description={approach.description}
+            // description={approach.description}
             backgroundColor="#ECB34F"
             titleColor="#523211"
           />
+          </div>
         ))}
       </div>
 
