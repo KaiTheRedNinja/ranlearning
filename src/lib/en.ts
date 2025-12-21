@@ -76,15 +76,15 @@ const enContent: LocalizedContent = {
   },
   testimonialsSection: {
     shortReviews: [
-      "Short Review 1 Hello World",
-      "Short Review 2",
-      "Short Review 3 Hello World Slightly Longer",
-      "Short Review 4 Hello World",
-      "Short Review 5",
-      "Short Review 6 Hello World Slightly Longer",
-      "Short Review 7 Hello World",
-      "Short Review 8",
-      "Short Review 9 Hello World Slightly Longer"
+      "I would like to express my heartfelt appreciation to 冉⽼师 [Teacher Ran] . 冉⽼师 has been very engaging, highly committed and passionate in teaching. Her notes are very detailed and useful and she often organises extra classes for us, especially to brush u p our Chinese oral skills. These lessons are extremely effective a s my Chinese oral saw improvement quickly and I was more confident i n my writing skills as well. I am proud to say that under her guidance, I managed to improve from a B4 to a n A2 in my GCE O-level Higher Chinese after joining her classes for a short period of 6 months. I would highly recommend 冉⽼师’s classes to any parents who want to send their kids to a tuition center that i s effective and can bring immediate change to their child's results.",
+      "Want to thank you again for your guidance for [my child’s] Chinese exams. [My child] obtained 43 points, we’re so happy. I feel he is so blessed to have good teachers who trust and taught him well all these years… and you’re one of them… thank you & 感恩",
+      "Teacher Ran is a very patient and kind teacher. She's very relatable and easy to get along making me feel that she's just like my good friend. In addition to that, I felt that I was able to improve my Chinese conversational skills whilst chatting with her. She is also able t o clearly point out my personal weaknesses and incomprehensions, so that I can find the correct answers and have a better understanding towards the Chinese language. Moreover, her attentive care has made m e become very interested in the Chinese culture, making the learning process easy and enjoyable for me. The fun atmosphere of the classes makes me look forward to Chinese classes every time.",
+      // "Short Review 4 Hello World",
+      // "Short Review 5",
+      // "Short Review 6 Hello World Slightly Longer",
+      // "Short Review 7 Hello World",
+      // "Short Review 8",
+      // "Short Review 9 Hello World Slightly Longer"
     ],
     longReviews: [
       {
