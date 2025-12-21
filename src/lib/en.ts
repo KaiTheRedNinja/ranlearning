@@ -147,7 +147,7 @@ const enContent: LocalizedContent = {
   faqSection: {
     subsections: [
       {
-        title: "Course-Related",
+        title: "1. Course-Related",
         questionsAndAnswers: [
           {
             question: "Which grades and levels do your Chinese tuition courses cover?",
@@ -168,7 +168,7 @@ const enContent: LocalizedContent = {
         ],
       },
       {
-        title: "Teachers and Teaching Methods",
+        title: "2. Teachers and Teaching Methods",
         questionsAndAnswers: [
           {
             question: "What qualifications and experience do the teachers have?",
@@ -179,7 +179,7 @@ const enContent: LocalizedContent = {
             question:
               "Are classes conducted online or in-person? What is the class size?",
             answer:
-              "We offer both online and in-person classes simultaneously. Classes are small (no more than 6 students per class), and we also provide one-on-one customized lessons. Missed lessons can be made up via recorded sessions to ensure students don’t miss any key points.",
+              "We offer both online and in-person classes simultaneously. Classes are small (no more than 6-8 students per class), and we also provide one-on-one customized lessons. Missed lessons can be made up via recorded sessions to ensure students don’t miss any key points.",
           },
           {
             question: "How do you ensure students’ learning outcomes?",
@@ -189,7 +189,7 @@ const enContent: LocalizedContent = {
         ],
       },
       {
-        title: "Fees and Registration",
+        title: "3. Fees and Registration",
         questionsAndAnswers: [
           {
             question: "What is the tuition fee? Is there a trial class?",
@@ -204,7 +204,7 @@ const enContent: LocalizedContent = {
         ],
       },
       {
-        title: "Exam and Academic Support",
+        title: "4. Exam and Academic Support",
         questionsAndAnswers: [
           {
             question:
@@ -220,7 +220,7 @@ const enContent: LocalizedContent = {
         ],
       },
       {
-        title: "Parent Communication",
+        title: "5. Parent Communication",
         questionsAndAnswers: [
           {
             question: "How can parents track their child’s progress?",
@@ -235,7 +235,7 @@ const enContent: LocalizedContent = {
         ],
       },
       {
-        title: "Technical Support",
+        title: "6. Technical Support",
         questionsAndAnswers: [
           {
             question: "What equipment is needed for online classes?",
