@@ -145,10 +145,15 @@ const enContent: LocalizedContent = {
     ]
   },
   faqSection: {
-    questionsAndAnswers: [
+    subsections: [
       {
+        title: "SUBSECTION TITLE GOES HERE",
+        questionsAndAnswers: [
+          {
         question: "QUESTION GOES HERE",
         answer: "ANSWER GOES HERE"
+          }
+        ]
       }
     ]
   },

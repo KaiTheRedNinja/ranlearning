@@ -18,16 +18,21 @@ export default function FAQ() {
       </div>
 
       <div className="px-6 gap-4 flex flex-col mb-8">
-        <Accordion type="single" collapsible>
-          {t.faqSection.questionsAndAnswers.map((qa, index) => (
-            <AccordionItem value={`item-${index}`}>
-              <AccordionTrigger>{qa.question}</AccordionTrigger>
-              <AccordionContent>
-                {qa.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        {t.faqSection.subsections.map((subsection, subIndex) => (
+          <div key={subIndex} className="flex flex-col gap-4">
+            <h3 className="text-2xl font-semibold">{subsection.title}</h3>
+            <Accordion type="single" collapsible>
+              {subsection.questionsAndAnswers.map((qa, index) => (
+                <AccordionItem key={index} value={`item-${subIndex}-${index}`}>
+                  <AccordionTrigger>{qa.question}</AccordionTrigger>
+                  <AccordionContent>
+                    {qa.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        ))}
       </div>
     </div>
   );

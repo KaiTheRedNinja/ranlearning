@@ -68,9 +68,12 @@ export interface LocalizedContent {
     }[]
   };
   faqSection: {
-    questionsAndAnswers: {
-      question: string
-      answer: string
+    subsections: {
+      title: string
+      questionsAndAnswers: {
+        question: string
+        answer: string
+      }[]
     }[]
   };
   footerSection: {
