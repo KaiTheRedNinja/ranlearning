@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import { Globe } from 'lucide-react';
 import enContent from './en';
 import zhContent from './zh';
+import { I18NProvider } from 'next/dist/server/lib/i18n-provider';
 
 // Define your localization structure with TypeScript
 type Language = 'en' | 'zh';
@@ -99,7 +100,15 @@ export const useLanguage = () => {
 
 // Language Provider Component
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  // function to determine current device language
+  const getDeviceLanguage = (): 'en' | 'zh' => {
+    if (typeof navigator !== 'undefined') {
+      if (navigator.language.startsWith('zh')) return 'zh';
+    }
+    return 'en';
+  };
+
+  const [language, setLanguage] = useState<Language>(getDeviceLanguage());
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t: translations[language] }}>
