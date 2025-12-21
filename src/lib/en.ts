@@ -147,15 +147,104 @@ const enContent: LocalizedContent = {
   faqSection: {
     subsections: [
       {
-        title: "SUBSECTION TITLE GOES HERE",
+        title: "Course-Related",
         questionsAndAnswers: [
           {
-        question: "QUESTION GOES HERE",
-        answer: "ANSWER GOES HERE"
-          }
-        ]
-      }
-    ]
+            question: "Which grades and levels do your Chinese tuition courses cover?",
+            answer:
+              "We provide comprehensive Chinese tutoring from Primary 1 to Junior College (JC), covering Singapore’s mainstream primary and secondary school curriculum, IBDP Chinese A/B, O-Level Chinese, A-Level H1 Chinese, and H2 China Studies.",
+          },
+          {
+            question: "What are the key focuses of IBDP Chinese course tutoring?",
+            answer:
+              "Our students come from major IBDP schools such as ACSI, HCI, SOTA, and SJI. We offer specialized training for IBDP Chinese B (HL/SL), including reading comprehension, listening, oral, and essay writing. We help students improve quickly, and currently, 100% of our students achieve excellent scores of 6–7. In the 2024 IBDP, 100% scored a perfect 7.",
+          },
+          {
+            question:
+              "Are the courses designed according to the latest Singapore Ministry of Education syllabus?",
+            answer:
+              "Yes, our courses strictly align with the MOE syllabus, SEAB exam requirements, and IBDP assessment standards. We regularly update content to match educational reforms.",
+          },
+        ],
+      },
+      {
+        title: "Teachers and Teaching Methods",
+        questionsAndAnswers: [
+          {
+            question: "What qualifications and experience do the teachers have?",
+            answer:
+              "Our teachers are all specialized in Chinese language, hold local teaching qualifications, are familiar with Singapore’s exam system, and have extensive teaching experience in primary and secondary schools.",
+          },
+          {
+            question:
+              "Are classes conducted online or in-person? What is the class size?",
+            answer:
+              "We offer both online and in-person classes simultaneously. Classes are small (no more than 6 students per class), and we also provide one-on-one customized lessons. Missed lessons can be made up via recorded sessions to ensure students don’t miss any key points.",
+          },
+          {
+            question: "How do you ensure students’ learning outcomes?",
+            answer:
+              "We tailor teaching to individual students using a “diagnostic assessment – build confidence – continuously strengthen weak areas” model. For students who need more support, teachers, parents, and students form a WhatsApp group for ongoing communication and assistance. We also offer targeted training for weak areas (e.g., essay writing and oral exam crash courses).",
+          },
+        ],
+      },
+      {
+        title: "Fees and Registration",
+        questionsAndAnswers: [
+          {
+            question: "What is the tuition fee? Is there a trial class?",
+            answer:
+              "Fees vary based on course type and duration. Trial classes are available, usually charged at the rate of one lesson. For specific prices, please check the course page or contact our administrative staff.",
+          },
+          {
+            question: "What if a student misses a class?",
+            answer:
+              "Students can watch the recorded lesson or reschedule to another available time with the same or another teacher (or opt for one-on-one online makeup sessions, limited to twice per term).",
+          },
+        ],
+      },
+      {
+        title: "Exam and Academic Support",
+        questionsAndAnswers: [
+          {
+            question:
+              "Do you offer specialized training for O-Level/A-Level Chinese oral exams?",
+            answer:
+              "Yes, we run intensive oral exam preparation classes before each exam season, simulating real exam conditions to improve students’ adaptability, reading fluency, and conversational skills. The Secondary 4 oral class is conducted online. HCL oral classes start in late April, with weekly sessions until the July exams. CL oral classes are concentrated during the June holidays, with 2–3 sessions per week, each covering 3 topics.",
+          },
+          {
+            question: "What is the format of the H2 China Studies course?",
+            answer:
+              "We are currently the only center in Singapore offering H2 China Studies. Our teacher graduated from a top Chinese university in law and has many years of experience as a senior Chinese language teacher. Their legal background allows for deep yet accessible exploration of political, economic, diplomatic, and social topics in China Studies, helping students understand and master related subjects.",
+          },
+        ],
+      },
+      {
+        title: "Parent Communication",
+        questionsAndAnswers: [
+          {
+            question: "How can parents track their child’s progress?",
+            answer:
+              "Our teachers regularly communicate with parents. For students needing extra support, teachers, parents, and students form a group to provide continuous help with Chinese learning outside of class.",
+          },
+          {
+            question: "Can I get a refund if I’m unsatisfied with the course?",
+            answer:
+              "Refunds are not available. Our current students are 100% satisfied. Most students come through referrals, and our team is confident in helping every child find their own learning style and make progress in Chinese.",
+          },
+        ],
+      },
+      {
+        title: "Technical Support",
+        questionsAndAnswers: [
+          {
+            question: "What equipment is needed for online classes?",
+            answer:
+              "Only a stable internet connection, computer/tablet, and microphone are required. We use Zoom or a customized teaching platform, which is easy to operate.",
+          },
+        ],
+      },
+    ],
   },
   footerSection: {
     copyright: "© 2025 Ran Learning. All rights reserved."
