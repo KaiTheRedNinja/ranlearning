@@ -38,6 +38,7 @@ export interface LocalizedContent {
     specialProgrammes: {
       title: string
       description: string
+      fullImage: string | null
       backgroundColor: string
       titleColor: string
       bodyColor: string

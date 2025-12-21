@@ -39,6 +39,8 @@ export default function Courses() {
                   backgroundColor={programme.backgroundColor}
                   titleColor={programme.titleColor}
                   bodyColor={programme.bodyColor}
+                  showMore={true}
+                  image={programme.fullImage ? `${programme.fullImage}` : undefined}
                 />
               </div>
             ))}

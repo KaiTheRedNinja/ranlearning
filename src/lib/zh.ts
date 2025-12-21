@@ -56,29 +56,33 @@ const zhContent: LocalizedContent = {
     specialProgrameTitle: "Special Programmes",
     specialProgrammes: [
       {
-        title: "假期班课程",
+        title: "3天假期课程",
         description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        fullImage: "Programme_3 Day.jpg",
         backgroundColor: "#f0f9ff",
         titleColor: "#0c4a6e",
         bodyColor: "#475569"
       },
       {
-        title: "一对一私人定制",
+        title: "六月假期课程",
         description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        fullImage: "Programme_June Hol.jpg",
         backgroundColor: "#fffbeb",
         titleColor: "#92400e",
         bodyColor: "#78716c"
       },
       {
-        title: "商务中文",
+        title: "O水准华文口试强化课程",
         description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        fullImage: "Programme_O lvl oral.jpg",
         backgroundColor: "#fef2f2",
         titleColor: "#7f1d1d",
         bodyColor: "#57534e"
       },
       {
-        title: "?",
+        title: "趣味拼音课程",
         description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        fullImage: "Programme_Pinyin.jpg",
         backgroundColor: "#f0fdf4",
         titleColor: "#14532d",
         bodyColor: "#44403c"

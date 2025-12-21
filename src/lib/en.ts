@@ -41,29 +41,33 @@ const enContent: LocalizedContent = {
     specialProgrameTitle: "Special Programmes",
     specialProgrammes: [
       {
-        title: "Holiday Classes",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "3 Day Holiday Programme",
+        description: "Compo + Compre + Oral: 3 days, first-come-first served. Ms Ran and team has extensive teaching experience and has a track record of stellar results.",
+        fullImage: "Programme_3 Day.jpg",
         backgroundColor: "#f0f9ff",
         titleColor: "#0c4a6e",
         bodyColor: "#475569"
       },
       {
-        title: "One-on-One Customised Tutoring",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "June Holiday Programme",
+        description: "5 Day programme for PSLE, S1-S3 and S3 Higher Chinese students",
+        fullImage: "Programme_June Hol.jpg",
         backgroundColor: "#fffbeb",
         titleColor: "#92400e",
         bodyColor: "#78716c"
       },
       {
-        title: "Business Chinese",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "O-Level Chinese Oral Booster Course",
+        description: "Explore 2-3 oral topics per lesson! Suitable for students preparing for O'LEVEL Chinese Oral Examination.Topics covered will include commonly tested ones that closely follow current affairs.In-house materials developed specifically to help students identify the key discussion points and highlights of each topic. Each student will have opportunities to speak and practice his/her oral skills on each topic with the guidance from the teacher.",
+        fullImage: "Programme_O lvl oral.jpg",
         backgroundColor: "#fef2f2",
         titleColor: "#7f1d1d",
         bodyColor: "#57534e"
       },
       {
-        title: "?",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "Fun with PinYin!",
+        description: "Is your child struggling with Chinese pronunciation or afraid to speak? Our Pinyin Mastery Class is the solution!",
+        fullImage: "Programme_Pinyin.jpg",
         backgroundColor: "#f0fdf4",
         titleColor: "#14532d",
         bodyColor: "#44403c"
