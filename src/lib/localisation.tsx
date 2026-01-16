@@ -47,6 +47,7 @@ export interface LocalizedContent {
   testimonialsSection: {
     reviews: {
       content: string
+      machineTranslated?: boolean // defaults to false if not specified
       image?: string
       author?: string
     }[]

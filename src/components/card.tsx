@@ -117,6 +117,7 @@ export default function Card({
           </p>
         )}
         
+        {/* TODO: if we don't need to expand, don't show this */}
         {(showMore || expandable) && (
           <div
             className="font-bold mt-3"

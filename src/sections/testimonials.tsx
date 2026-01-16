@@ -45,6 +45,13 @@ export default function Testimonials() {
                 description={
                   <>
                     <span className="italic text-gray-700">"{review.content}"</span>
+                    {/* if the review is machine translated, show a note */}
+                    {review.machineTranslated && (
+                      <p className="text-xs md:text-sm text-gray-500 mt-2 italic">
+                        (Translated from original language)
+                      </p>
+                    )}
+
                     {authorSection}
                   </>
                 }
