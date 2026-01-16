@@ -45,12 +45,10 @@ export interface LocalizedContent {
     }[]
   };
   testimonialsSection: {
-    shortReviews: string[],
-    longReviews: {
-      title: string
-      description: string
-      image: string
-      imageOnLeft: boolean
+    reviews: {
+      content: string
+      image?: string
+      author?: string
     }[]
   };
   blogSection: {

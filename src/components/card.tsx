@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 
 type CardProps = {
   image?: string;
@@ -14,6 +14,8 @@ type CardProps = {
   titleColor?: string;
   bodyColor?: string;
   seeMoreColor?: string;
+  expandable?: boolean;
+  lineClamp?: number;
 };
 
 export default function Card({
@@ -27,18 +29,31 @@ export default function Card({
   backgroundColor,
   titleColor,
   bodyColor,
-  seeMoreColor
+  seeMoreColor,
+  expandable = false,
+  lineClamp = 5
 }: CardProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleClick = () => {
+    if (expandable) {
+      setIsExpanded(!isExpanded);
+    } else if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <div
-      onClick={onClick}
+      onClick={handleClick}
       className="flex-shrink-0 overflow-hidden"
       style={{
         backgroundColor,
         borderRadius: '16px',
         boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-        cursor: onClick ? 'pointer' : 'default',
-        width: '100%'
+        cursor: (expandable || onClick) ? 'pointer' : 'default',
+        width: '100%',
+        transition: 'box-shadow 0.3s ease'
       }}
     >
       {image && (
@@ -89,27 +104,29 @@ export default function Card({
               fontSize: '16px',
               color: bodyColor,
               lineHeight: '1.5',
-              display: '-webkit-box',
-              WebkitLineClamp: 5,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis'
+              ...(expandable && !isExpanded ? {
+                display: '-webkit-box',
+                WebkitLineClamp: lineClamp,
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis'
+              } : {})
             }}
           >
             {description}
           </p>
         )}
         
-        {showMore && (
+        {(showMore || expandable) && (
           <div
             className="font-bold mt-3"
             style={{
-              fontSize: '20px',
-              color: seeMoreColor,
-              textDecoration: 'underline'
+              fontSize: '16px',
+              color: seeMoreColor || '#3b82f6',
+              textDecoration: 'none'
             }}
           >
-            Show More
+            {expandable ? (isExpanded ? '▼ Show Less' : '▶ Show More') : 'Show More'}
           </div>
         )}
       </div>
