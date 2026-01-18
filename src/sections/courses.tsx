@@ -2,13 +2,15 @@
 
 import Card from "@/components/card"
 import { useLanguage } from "@/lib/localisation"
+import { useColors } from "@/lib/colorContext"
 
 
 export default function Courses() {
   const { t } = useLanguage();
+  const colors = useColors();
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: '#fff' }}>
+    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">{t.sectionTitles.programmesAndCourses}</h2>
       </div>
@@ -52,7 +54,7 @@ export default function Courses() {
         <div
           className="flex-shrink-0 overflow-hidden rounded-full"
           style={{
-            backgroundColor: '#ECB34F',
+            backgroundColor: colors.emphasizedBackground,
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
           }}
         >

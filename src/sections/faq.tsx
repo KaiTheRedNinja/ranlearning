@@ -7,12 +7,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { useLanguage } from "@/lib/localisation";
+import { useColors } from "@/lib/colorContext";
 
 export default function FAQ() {
   const { t } = useLanguage();
+  const colors = useColors();
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: '#fff' }}>
+    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">{t.sectionTitles.faq}</h2>
       </div>

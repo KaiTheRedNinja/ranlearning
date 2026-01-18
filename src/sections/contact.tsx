@@ -1,12 +1,14 @@
 'use client';
 
 import { useLanguage } from "@/lib/localisation";
+import { useColors } from "@/lib/colorContext";
 
 export default function Contact() {
   const { t } = useLanguage();
+  const colors = useColors();
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: '#f5f5f5' }}>
+    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.primaryBackground }}>
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">{t.sectionTitles.contactUs}</h2>
       </div>
@@ -15,7 +17,7 @@ export default function Contact() {
         <div
           className="flex-shrink-0 overflow-hidden"
           style={{
-            backgroundColor: "#ECB34F",
+            backgroundColor: colors.emphasizedBackground,
             borderRadius: '16px',
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
             cursor: 'pointer',
@@ -25,7 +27,7 @@ export default function Contact() {
             className="font-bold flex-1 p-6 text-center"
             style={{
               fontSize: '36px',
-              color: "#523211",
+              color: colors.titleText,
               lineHeight: '1.2'
             }}
           >

@@ -98,7 +98,7 @@ export default function Card({
         </div>
         
         {description && (
-          <p
+          <div
             className="mt-3"
             style={{
               fontSize: '16px',
@@ -114,7 +114,7 @@ export default function Card({
             }}
           >
             {description}
-          </p>
+          </div>
         )}
         
         {/* TODO: if we don't need to expand, don't show this */}

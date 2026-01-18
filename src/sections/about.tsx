@@ -1,11 +1,13 @@
 import Card from "@/components/card";
 import { useLanguage } from "@/lib/localisation";
+import { useColors } from "@/lib/colorContext";
 
 export default function About() {
   const { t } = useLanguage();
+  const colors = useColors();
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: '#f5f5f5' }}>
+    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.primaryBackground }}>
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">{t.sectionTitles.aboutUs}</h2>
       </div>
@@ -17,8 +19,8 @@ export default function About() {
             title={approach.name}
             icon={approach.icon}
             // description={approach.description}
-            backgroundColor="#ECB34F"
-            titleColor="#523211"
+            backgroundColor={colors.emphasizedBackground}
+            titleColor={colors.titleText}
           />
           </div>
         ))}

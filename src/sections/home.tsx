@@ -3,12 +3,14 @@
 import ImageCarousel from "@/components/imageCarousel";
 import { Star } from "lucide-react";
 import { useLanguage } from "@/lib/localisation";
+import { useColors } from "@/lib/colorContext";
 
 export default function Home() {
   const { t } = useLanguage();
+  const colors = useColors();
 
   return (
-    <div className="" style={{ backgroundColor: '#fff' }}>
+    <div className="" style={{ backgroundColor: colors.secondaryBackground }}>
       {/* image, ratio of 1.6 */}
       <ImageCarousel />
 
