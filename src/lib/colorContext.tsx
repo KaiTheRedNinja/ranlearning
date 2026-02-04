@@ -12,10 +12,10 @@ export type ColorScheme = {
 
 const DEFAULT_COLORS: ColorScheme = {
   primaryBackground: '#f5f5f5',
-  secondaryBackground: '#ffffff',
-  bodyText: '#000000',
-  titleText: '#000000',
-  emphasizedBackground: '#ECB34F',
+  secondaryBackground: '#E9E7ED',
+  bodyText: '#464856',
+  titleText: '#2C3A7C',
+  emphasizedBackground: '#F1CD71',
 };
 
 type ColorContextType = {

@@ -9,6 +9,7 @@ const enContent: LocalizedContent = {
     programmesAndCourses: "Programmes and Courses",
     testimonials: "Testimonials",
     blog: "Blog",
+    sampleMaterials: "Sample Materials",
     contactUs: "Contact Us",
     faq: "FAQ"
   },
@@ -120,6 +121,43 @@ const enContent: LocalizedContent = {
         shortDescription: "Short description of blog post 1.",
         fullContentLink: "/blog/post-1"
       }
+    ],
+    sampleMaterials: [
+      { 
+        title: "Practical Chinese for Middle School - Private Email + Official Email",
+        shortDescription: null,
+        pdfName: "中学实用文-私人电邮+公务电邮.pdf"
+      },
+      { 
+        title: "Chinese Application - 14",
+        shortDescription: null,
+        pdfName: "语文应用-14.pdf"
+      },
+      { 
+        title: "Chinese Application - 13",
+        shortDescription: null,
+        pdfName: "语文应用-13.pdf"
+      },
+      { 
+        title: "Exam Practice 4 - Pros and Cons of AI for Learning and Life + Student Lifestyles (IBDP-Chinese B)",
+        shortDescription: null,
+        pdfName: "考试练习4-人工智能对学习生活的利弊+学生的生活方式（IBDP-Chinese B）.pdf"
+      },
+      { 
+        title: "S4HCL - Speech (Contributions of Foreign Workers) + Material Composition - Ageing (Advanced Chinese) - with model essay",
+        shortDescription: null,
+        pdfName: "S4HCL-演讲稿（外籍工作人士的贡献）+材料作文-老龄化（高华）-有范文.pdf"
+      },
+      { 
+        title: "S3 Express Unit 1 - With You By My Side Exam Vocabulary Review 1",
+        shortDescription: null,
+        pdfName: "S3快捷单元1-有你作伴 考试词语复习1.pdf" 
+      },
+      { 
+        title: "S2 Chinese Application Unit 1 - WA1 Vocabulary Review",
+        shortDescription: null,
+        pdfName: "S2 语文应用 一单元-WA1 词语复习.pdf"
+      },
     ]
   },
   contactSection: {

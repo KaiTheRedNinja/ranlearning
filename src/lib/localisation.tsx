@@ -16,6 +16,7 @@ export interface LocalizedContent {
     programmesAndCourses: string
     testimonials: string
     blog: string
+    sampleMaterials: string
     contactUs: string
     faq: string
   };
@@ -57,6 +58,11 @@ export interface LocalizedContent {
       title: string
       shortDescription: string
       fullContentLink: string
+    }[],
+    sampleMaterials: {
+      title: string
+      shortDescription: string | null
+      pdfName: string
     }[]
   };
   contactSection: {

@@ -9,6 +9,7 @@ const zhContent: LocalizedContent = {
     programmesAndCourses: "课程介绍",
     testimonials: "家长见证",
     blog: "资源中心",
+    sampleMaterials: "资料下载",
     contactUs: "报名与联络",
     faq: "FAQ"
   },
@@ -134,6 +135,43 @@ const zhContent: LocalizedContent = {
         shortDescription: "Short description of blog post 1.",
         fullContentLink: "/blog/post-1"
       }
+    ],
+    sampleMaterials: [
+      { 
+        title: "中学实用文-私人电邮+公务电邮",
+        shortDescription: null,
+        pdfName: "中学实用文-私人电邮+公务电邮.pdf"
+      },
+      { 
+        title: "语文应用-14",
+        shortDescription: null,
+        pdfName: "语文应用-14.pdf"
+      },
+      { 
+        title: "语文应用-13",
+        shortDescription: null,
+        pdfName: "语文应用-13.pdf"
+      },
+      { 
+        title: "考试练习4-人工智能对学习生活的利弊+学生的生活方式（IBDP-Chinese B）",
+        shortDescription: null,
+        pdfName: "考试练习4-人工智能对学习生活的利弊+学生的生活方式（IBDP-Chinese B）.pdf"
+      },
+      { 
+        title: "S4HCL-演讲稿（外籍工作人士的贡献）+材料作文-老龄化（高华）-有范文",
+        shortDescription: null,
+        pdfName: "S4HCL-演讲稿（外籍工作人士的贡献）+材料作文-老龄化（高华）-有范文.pdf"
+      },
+      { 
+        title: "S3快捷单元1-有你作伴 考试词语复习1",
+        shortDescription: null,
+        pdfName: "S3快捷单元1-有你作伴 考试词语复习1.pdf" 
+      },
+      { 
+        title: "S2 语文应用 一单元-WA1 词语复习",
+        shortDescription: null,
+        pdfName: "S2 语文应用 一单元-WA1 词语复习.pdf"
+      },
     ]
   },
   contactSection: {
