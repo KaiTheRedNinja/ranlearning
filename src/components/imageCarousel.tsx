@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  const images = ['carousel_0.jpg', 'carousel_1.jpg', 'carousel_2.jpg', 'carousel_3.jpg'];
+  const images = ['carousel_1.jpeg', 'carousel_2.jpeg', 'carousel_3.jpeg', 'carousel_4.jpeg', 'carousel_5.jpeg'];
 
   useEffect(() => {
     if (!autoPlay) return;
@@ -29,18 +29,18 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="relative w-full bg-gray-900">
+    <div className="relative w-full h-full bg-gray-900">
       {/* Aspect ratio container 13:10 */}
-      <div className="relative w-full" style={{ paddingBottom: '76.923%' }}>
+      <div className="relative w-full h-full" style={{ paddingBottom: '76.923%' }}>
         {/* Image container */}
         <div className="absolute inset-0 overflow-hidden">
           <img
             src={images[currentIndex]}
             alt={`Carousel image ${currentIndex + 1}`}
-            className="absolute inset-0 object-cover"
+            className="absolute inset-0 object-cover w-full h-full"
           />
         </div>
-
+e
         {/* Left arrow */}
         <button
           onClick={goToPrevious}
