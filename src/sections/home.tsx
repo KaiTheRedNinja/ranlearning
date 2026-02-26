@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* Right content — constrained and padded */}
         <div className="md:w-1/2 md:flex-shrink-0">
-          <div className="md:max-w-lg md:px-10 md:py-8">
+          <div className="md:px-20 md:py-8">
 
             {/* Logo */}
             <div className="px-4 md:px-0">

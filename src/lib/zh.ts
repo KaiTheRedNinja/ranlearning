@@ -14,51 +14,56 @@ const zhContent: LocalizedContent = {
     faq: "FAQ"
   },
   homeSection: {
-    briefIntroduction: `\
-在 Ran Enrichment Learning，我们专注于为学生提供高效、系统化的华文提升课程，涵盖写作、阅读理解、语言应用与口试表达等关键能力。
+    briefIntroduction: `在 Ran Enrichment Learning，我们专注于为学生提供高效、系统化的华文提升课程，涵盖写作、阅读理解、语言应用与口试表达等关键能力。
 
 我们熟悉本地O水准、IP 课程、IBDP课程，以及JC课程需求，也深谙考试趋势，通过技巧教学、写作框架训练及批判性思维培养，帮助学生在考试中脱颖而出。
 
 我们的目标不只是提高分数，更让学生具备自信表达、深入思考的能力，为学生的未来学习做好准备。`,
     schoolFeatures: [
-      "图片",
-      "简短介绍  ",
-      "学校特色、优势（要点)"
+      "我们的愿景",
+      "教育理念",
+      "办学特色"
     ]
   },
   aboutSection: {
     approaches: [
       {
         name: "全人教育",
-        description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
+        description: "我们注重培养完整的学习者——不仅提升应试能力，更帮助学生建立信心、激发求知欲，以及对华文语言文化的持久热情。",
         icon: "/globe.svg"
       },
       {
         name: "双语优势",
-        description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
+        description: "我们的教学方式融合英语与华语优势，帮助学生发展扎实的双语沟通能力，为新加坡的学术与职场环境做好准备。",
         icon: "/globe.svg"
       },
       {
         name: "小班制",
-        description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
+        description: "每班不超过6至8人，确保每位学生都能获得充分关注、个性化反馈，以及适合自己节奏的学习空间。",
         icon: "/globe.svg"
       },
       {
         name: "互动式教学",
-        description: "Description about Ran Learning's approach, Lorem ipsum dolor sit amet",
+        description: "我们的课堂超越死记硬背——通过讨论、情境活动与结构化练习，让华文学习变得生动有趣、贴近生活。",
         icon: "/globe.svg"
       }
     ],
     teachingTeamTitle: "教师团队",
-    teachingTeam: "教师团队简介（粗略介绍，不需要详细到个人）Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    teachingTeam: `我们的教师团队均经过系统且专业的培训，具备扎实的华文教学经验与丰富的课堂管理能力。老师能够快速识别学生在语言理解、表达能力及应试技巧方面的薄弱环节，并针对不同学生的学习特点制定有效的教学策略。
+
+课程设计严格参照新加坡教育部华文教学课纲及学校考试要求，在夯实基础的同时，注重能力与技巧的同步提升，帮助学生稳步提高成绩与学习信心。
+
+我们始终重视老师·家长·学生三方之间的沟通与配合，通过持续反馈与跟进，协助学生逐步建立良好的学习习惯与积极的学习态度，引导孩子设立明确目标并持续进步。`
   },
   coursesSection: {
-    courseSummary: "Brief recap of Ran Learning's teaching style, include mentions of 小学华文补习  /  中学华文 / JC H1华文 IBDP中文 (each will be links)",
-    specialProgrameTitle: "Special Programmes",
+    courseSummary: `常规课程每周一次，系统涵盖华文学习与考试中的核心能力模块：作文与写作表达、口试训练与语言组织、阅读理解与文本分析、听力理解与答题技巧。帮助学生巩固基础知识，为校内考试及国家考试做好充分准备。
+
+我们提供各阶段课程：[小学华文补习](/courses/primary) | [中学华文](/courses/secondary) | [JC H1华文](/courses/jc) | [IBDP中文](/courses/ibdp)`,
+    specialProgrameTitle: "特色课程",
     specialProgrammes: [
       {
         title: "3天假期课程",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "作文+阅读理解+口试：3天课程，先到先得。冉老师及团队拥有丰富的教学经验，学生成绩屡创佳绩。",
         fullImage: "Programme_3 Day.jpg",
         backgroundColor: "#f0f9ff",
         titleColor: "#0c4a6e",
@@ -66,7 +71,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "六月假期课程",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "针对PSLE、中一至中三及中三高华学生的5天强化课程。",
         fullImage: "Programme_June Hol.jpg",
         backgroundColor: "#fffbeb",
         titleColor: "#92400e",
@@ -74,7 +79,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "O水准华文口试强化课程",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "共10节课的口试集训营。每节课涵盖2至3个口试题材，紧扣社会热点与常考主题，提供高频表达素材与应答思路。每位学生均有充分练习与个别反馈机会，帮助熟悉考试节奏，提升表达逻辑与临场表现。",
         fullImage: "Programme_O lvl oral.jpg",
         backgroundColor: "#fef2f2",
         titleColor: "#7f1d1d",
@@ -82,7 +87,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "趣味拼音课程",
-        description: "Description about Ran Learning's special programme, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "您的孩子是否在华文发音上遇到困难，或不敢开口说话？我们的拼音精通课程正是为此而设！",
         fullImage: "Programme_Pinyin.jpg",
         backgroundColor: "#f0fdf4",
         titleColor: "#14532d",
@@ -121,57 +126,57 @@ const zhContent: LocalizedContent = {
   blogSection: {
     blogItems: [
       {
-        title: "Blog Post 1",
+        title: "如何在家提升孩子华文1",
         shortDescription: "Short description of blog post 1.",
         fullContentLink: "/blog/post-1"
       },
       {
-        title: "Blog Post 1",
+        title: "新加坡考试制度变化",
         shortDescription: "Short description of blog post 1.",
         fullContentLink: "/blog/post-1"
       },
       {
-        title: "Blog Post 1",
+        title: "免费下载",
         shortDescription: "Short description of blog post 1.",
         fullContentLink: "/blog/post-1"
       }
     ],
     sampleMaterials: [
-      { 
+      {
         title: "中学实用文-私人电邮+公务电邮",
         shortDescription: null,
         pdfName: "中学实用文-私人电邮+公务电邮.pdf"
       },
-      { 
+      {
         title: "语文应用-14",
         shortDescription: null,
         pdfName: "语文应用-14.pdf"
       },
-      { 
+      {
         title: "语文应用-13",
         shortDescription: null,
         pdfName: "语文应用-13.pdf"
       },
-      { 
+      {
         title: "考试练习4-人工智能对学习生活的利弊+学生的生活方式（IBDP-Chinese B）",
         shortDescription: null,
         pdfName: "考试练习4-人工智能对学习生活的利弊+学生的生活方式（IBDP-Chinese B）.pdf"
       },
-      { 
+      {
         title: "S4HCL-演讲稿（外籍工作人士的贡献）+材料作文-老龄化（高华）-有范文",
         shortDescription: null,
         pdfName: "S4HCL-演讲稿（外籍工作人士的贡献）+材料作文-老龄化（高华）-有范文.pdf"
       },
-      { 
+      {
         title: "S3快捷单元1-有你作伴 考试词语复习1",
         shortDescription: null,
-        pdfName: "S3快捷单元1-有你作伴 考试词语复习1.pdf" 
+        pdfName: "S3快捷单元1-有你作伴 考试词语复习1.pdf"
       },
-      { 
+      {
         title: "S2 语文应用 一单元-WA1 词语复习",
         shortDescription: null,
         pdfName: "S2 语文应用 一单元-WA1 词语复习.pdf"
-      },
+      }
     ]
   },
   contactSection: {
@@ -194,16 +199,15 @@ const zhContent: LocalizedContent = {
       {
         contactMethod: "Addresses",
         icon: "🏠",
-        detail: `\
-- 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
+        detail: `- 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
 - #02-06 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
 - 709A East Coast Road S459064, Kinder Growth Learning Centre & 冉老师华文课堂`
-      },
+      }
     ]
   },
   faqSection: {
     subsections: [
-      {      
+      {
         title: "一、课程相关",
         questionsAndAnswers: [
           {
@@ -222,7 +226,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "二、师资与教学方式",
-          questionsAndAnswers: [
+        questionsAndAnswers: [
           {
             question: "授课老师有哪些资质和经验？",
             answer: "我们的教师均为华文专业背景，持有本地教师资格认证，熟悉新加坡考试体系，拥有丰富的中小学教学经验"
@@ -233,56 +237,56 @@ const zhContent: LocalizedContent = {
           },
           {
             question: "如何保证学生的学习效果？",
-            answer: "我们根据学生情况，因材施教，采用“诊断性评估—培养自信—不断强化弱项”模式，针对学习能力较弱的学生，老师、家长、学生会建立WhatsApp小组，随时沟通和帮助学生学习华文，并设有弱项专项训练（如作文、口试突击班）。"
-          },
+            answer: "我们根据学生情况，因材施教，采用\"诊断性评估—培养自信—不断强化弱项\"模式，针对学习能力较弱的学生，老师、家长、学生会建立WhatsApp小组，随时沟通和帮助学生学习华文，并设有弱项专项训练（如作文、口试突击班）。"
+          }
         ]
       },
       {
         title: "三、费用与报名",
         questionsAndAnswers: [
-            {
-              question: "学费是多少？是否有试听课？",
-              answer: "费用根据课程类型和时长而定。有试听课，通常是一节课的学费，具体价格请查看课程页面或联系行政老师。"
-            },
-            {
-              question: "如果缺课怎么办？",
-              answer: "学生可观看课程录像补课，也可安排调至其他老师可行的时间补课（或者一对一的online补课，一学期不超过2次）。"
-            },
-          ]
-        },
+          {
+            question: "学费是多少？是否有试听课？",
+            answer: "费用根据课程类型和时长而定。有试听课，通常是一节课的学费，具体价格请查看课程页面或联系行政老师。"
+          },
+          {
+            question: "如果缺课怎么办？",
+            answer: "学生可观看课程录像补课，也可安排调至其他老师可行的时间补课（或者一对一的online补课，一学期不超过2次）。"
+          }
+        ]
+      },
       {
         title: "四、考试与升学支持",
         questionsAndAnswers: [
-            {
-              question: "是否有针对O水准/A水准华文口试的专项训练？",
-              answer: "是的，我们每年在考试季前开设口试强化班，模拟真实考场，提升学生的应变能力、朗读技巧和对话表达。中四口试班是online课程形式，HCL的口试班时间会在4月底开始，每周一次课，一直到7月考试之前。CL的口试班会集中在6月假期，一周2-3次课，每次3个topic"
-            },
-            {
-              question: "H2的中国通识课程是什么样的形式？",
-              answer: "我们是目前全新加坡唯一一家提供H2 中国通识课程的中心，老师原本是中国知名大学法律专业毕业，多年的高级华文教师资历，其法律背景，对研究中国通识的政治、经济、外交、社会话题有很强的延伸性，擅长深入简出，帮助学生了解和掌握中国通识的相关课题。"
-            },
-          ]
-        },
+          {
+            question: "是否有针对O水准/A水准华文口试的专项训练？",
+            answer: "是的，我们每年在考试季前开设口试强化班，模拟真实考场，提升学生的应变能力、朗读技巧和对话表达。中四口试班是online课程形式，HCL的口试班时间会在4月底开始，每周一次课，一直到7月考试之前。CL的口试班会集中在6月假期，一周2-3次课，每次3个topic"
+          },
+          {
+            question: "H2的中国通识课程是什么样的形式？",
+            answer: "我们是目前全新加坡唯一一家提供H2 中国通识课程的中心，老师原本是中国知名大学法律专业毕业，多年的高级华文教师资历，其法律背景，对研究中国通识的政治、经济、外交、社会话题有很强的延伸性，擅长深入简出，帮助学生了解和掌握中国通识的相关课题。"
+          }
+        ]
+      },
       {
         title: "五、家长沟通",
         questionsAndAnswers: [
-            {
-              question: "家长如何了解孩子的学习进度？",
-              answer: "我们老师会与家长定期沟通，面对学习能力较弱或者需要更多支持的孩子，我们的老师会和家长、孩子组成多对一的group，帮助学生在补习课程以外，随时获得华文学习方面的帮助。"
-            },
-            {
-              question: "如果对课程不满意，可以退费吗？",
-              answer: "不可以退费。我们的学生对课程目前均是100%满意，大部分学生都是通过介绍认识我们，我们的团队有信心帮助每一个孩子，在学习华文的道路上找到适合自己的学习方式，并且获得进步。"
-            },
-          ]
-        },
+          {
+            question: "家长如何了解孩子的学习进度？",
+            answer: "我们老师会与家长定期沟通，面对学习能力较弱或者需要更多支持的孩子，我们的老师会和家长、孩子组成多对一的group，帮助学生在补习课程以外，随时获得华文学习方面的帮助。"
+          },
+          {
+            question: "如果对课程不满意，可以退费吗？",
+            answer: "不可以退费。我们的学生对课程目前均是100%满意，大部分学生都是通过介绍认识我们，我们的团队有信心帮助每一个孩子，在学习华文的道路上找到适合自己的学习方式，并且获得进步。"
+          }
+        ]
+      },
       {
         title: "六、技术支持",
         questionsAndAnswers: [
           {
             question: "线上课程需要什么设备？",
             answer: "只需稳定的网络、电脑/平板及麦克风即可。我们使用Zoom或定制教学平台，操作简便。"
-          },
+          }
         ]
       }
     ]
