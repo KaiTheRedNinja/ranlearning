@@ -5,7 +5,7 @@ const enContent: LocalizedContent = {
   registerNow: "Register NOW",
   sectionTitles: {
     home: "Home",
-    aboutUs: "About Us",
+    aboutUs: "What Sets us Apart",
     programmesAndCourses: "Programmes and Courses",
     testimonials: "Testimonials",
     blog: "Blog",
@@ -14,11 +14,11 @@ const enContent: LocalizedContent = {
     faq: "FAQ"
   },
   homeSection: {
-    briefIntroduction: `At Ran Enrichment Learning, we deliver high-impact Chinese language mastery designed for today's evolving academic landscape. From O-Levels and IP to IBDP and JC curricula, we bridge the gap between classroom instruction and examination distinction. 
+    briefIntroduction: `At **Ran Enrichment Learning**, we deliver high-impact Chinese language mastery designed for today's evolving academic landscape. From O-Levels and IP to IBDP and JC curricula, we bridge the gap between classroom instruction and examination distinction. 
 
-    Our methodology integrates targeted skill-based coaching with structured writing frameworks, enabling students not just to learn—but to think strategically. By anticipating examination trends and strengthening critical analysis, we equip students to approach complex papers with clarity, precision, and confidence. 
+Our methodology integrates targeted skill-based coaching with structured writing frameworks, enabling students not just to learn—but to think strategically. By anticipating examination trends and strengthening critical analysis, we equip students to approach complex papers with clarity, precision, and confidence. 
 
-    At Ran Laoshi Chinese Enrichment, we go beyond grade improvement. We cultivate articulate communicators, agile thinkers, and students equipped with the linguistic foundation for long-term academic and professional success.`,
+At Ran Laoshi Chinese Enrichment, we go beyond grade improvement. We cultivate articulate communicators, agile thinkers, and students equipped with the linguistic foundation for long-term academic and professional success.`,
     schoolFeatures: [
       "Our Vision",
       "Our Educational Beliefs",
@@ -48,11 +48,15 @@ const enContent: LocalizedContent = {
         icon: "/globe.svg"
       }
     ],
-    teachingTeamTitle: "Our Teachers",
-    teachingTeam: `Our teachers are professionally trained and bring extensive experience in teaching Chinese. We quickly identify each student's gaps in comprehension and exam techniques, creating a tailored plan that addresses their specific learning needs.
+    teachingTeamTitle: "Our Teaching Team",
+    teachingTeam: `
+## Expert Teachers. Personalised Strategies.
+Our teachers are professionally trained and bring extensive experience in teaching Chinese. We quickly identify each student's gaps in comprehension and exam techniques, creating a tailored plan that addresses their specific learning needs.
 
+## Curriculum Built for the MOE Syllabus
 Our programmes are strictly aligned with the Singapore MOE syllabus and school exam requirements. We build a solid foundation in the language while honing structured writing skills and exam strategies—helping students improve steadily in both results and confidence.
 
+## Consistent Support & Clear Goals
 Success is a partnership. We maintain close communication between teachers, parents, and students through regular feedback. By setting clear goals and focusing on strong study habits, we ensure every student makes steady, measurable progress.`
   },
   coursesSection: {

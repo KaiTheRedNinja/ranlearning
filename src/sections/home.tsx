@@ -1,6 +1,6 @@
 'use client';
 import ImageCarousel from "@/components/imageCarousel";
-import { useLanguage } from "@/lib/localisation";
+import { MD, useLanguage } from "@/lib/localisation";
 import { useColors } from "@/lib/colorContext";
 
 export default function Home() {
@@ -34,9 +34,9 @@ export default function Home() {
 
             {/* Intro + features */}
             <div className="px-6 md:px-0 mb-8">
-              <p className="text-lg whitespace-pre-line">
+              <MD>
                 {t.homeSection.briefIntroduction}
-              </p>
+              </MD>
               {t.homeSection.schoolFeatures.map((feature, index) => (
                 <h3 key={index} className="text-2xl font-semibold mt-8 mb-4">
                   ✨ {feature}

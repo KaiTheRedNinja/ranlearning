@@ -1,6 +1,6 @@
 'use client'
 import Card from "@/components/card"
-import { useLanguage } from "@/lib/localisation"
+import { useLanguage, MD } from "@/lib/localisation"
 import { useColors } from "@/lib/colorContext"
 
 export default function Courses() {
@@ -16,7 +16,7 @@ export default function Courses() {
           <h2 className="text-3xl font-bold">{t.sectionTitles.programmesAndCourses}</h2>
         </div>
         <div className="px-6 gap-4 flex flex-col">
-          <p className="text-md">{t.coursesSection.courseSummary}</p>
+          <MD>{t.coursesSection.courseSummary}</MD>
         </div>
         <div className="mx-auto w-full flex flex-col items-center">
           <hr className="my-0 border-t border-black w-[100px]" />
@@ -28,10 +28,31 @@ export default function Courses() {
 
       {/* Full-width horizontal scroll with matching left indent */}
       <div className="overflow-x-auto">
+        {/* Small screens: no left/right padding */}
         <div
-          className="flex gap-4 pb-4 px-6 md:px-0"
-          style={{ 
-            width: 'max-content', 
+          className="flex gap-4 pb-4 md:hidden px-6"
+          style={{ width: 'max-content' }}
+        >
+          {t.coursesSection.specialProgrammes.map((programme, index) => (
+            <div key={index} style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                title={programme.title}
+                description={<MD>{programme.description}</MD>}
+                backgroundColor={programme.backgroundColor}
+                titleColor={programme.titleColor}
+                bodyColor={programme.bodyColor}
+                showMore={true}
+                image={programme.fullImage ? `${programme.fullImage}` : undefined}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Medium+ screens: with padding */}
+        <div
+          className="hidden md:flex gap-4 pb-4 px-6 md:px-0"
+          style={{
+            width: 'max-content',
             paddingLeft: 'max(1.5rem, calc((100vw - (100vw * 2/3)) / 2 + 1.5rem))',
             paddingRight: 'max(1.5rem, calc((100vw - (100vw * 2/3)) / 2 + 1.5rem))',
           }}
@@ -40,7 +61,7 @@ export default function Courses() {
             <div key={index} style={{ width: "400px", maxWidth: '66.666vw' }}>
               <Card
                 title={programme.title}
-                description={programme.description}
+                description={<MD>{programme.description}</MD>}
                 backgroundColor={programme.backgroundColor}
                 titleColor={programme.titleColor}
                 bodyColor={programme.bodyColor}

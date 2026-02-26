@@ -1,8 +1,8 @@
+'use client'
 import React, { createContext, useContext, useState } from 'react';
-import { Globe } from 'lucide-react';
 import enContent from './en';
 import zhContent from './zh';
-import { I18NProvider } from 'next/dist/server/lib/i18n-provider';
+import Markdown from 'markdown-to-jsx';
 
 // Define your localization structure with TypeScript
 type Language = 'en' | 'zh';
@@ -125,3 +125,18 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     </LanguageContext.Provider>
   );
 };
+
+const overrides = {
+  h1: { props: { className: 'text-4xl font-bold' } },
+  h2: { props: { className: 'text-2xl font-bold mt-4 mb-2' } },
+  h3: { props: { className: 'text-xl font-bold mt-4 mb-2' } },
+  p:  { props: { className: 'my-2' } },
+  a:  { props: { className: 'text-blue-500 underline' } },
+  ul: { props: { className: 'list-disc list-inside my-2' } },
+  ol: { props: { className: 'list-decimal list-inside my-2' } },
+  li: { props: { className: 'ml-4' } },
+};
+
+export function MD({ children }: { children: string }) {
+  return <Markdown options={{ overrides }}>{children}</Markdown>;
+}

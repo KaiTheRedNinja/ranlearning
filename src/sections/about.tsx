@@ -1,5 +1,5 @@
 import Card from "@/components/card";
-import { useLanguage } from "@/lib/localisation";
+import { useLanguage, MD } from "@/lib/localisation";
 import { useColors } from "@/lib/colorContext";
 
 export default function About() {
@@ -14,7 +14,7 @@ export default function About() {
           <h2 className="text-3xl font-bold">{t.sectionTitles.aboutUs}</h2>
         </div>
 
-        <div className="px-6 gap-4 flex flex-col mt-6">
+        <div className="px-6 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-6">
           {t.aboutSection.approaches.map((approach, index) => (
             <div key={index}>
               <Card
@@ -36,7 +36,7 @@ export default function About() {
         </div>
 
         <div className="px-6 gap-4 flex flex-col mb-8 mt-4">
-          <p className="text-md">{t.aboutSection.teachingTeam}</p>
+          <MD>{t.aboutSection.teachingTeam}</MD>
         </div>
 
       </div>

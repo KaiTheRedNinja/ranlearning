@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { useLanguage } from "@/lib/localisation";
+import { MD, useLanguage } from "@/lib/localisation";
 import { useColors } from "@/lib/colorContext";
 
 export default function FAQ() {
@@ -29,7 +29,7 @@ export default function FAQ() {
                 <AccordionItem key={index} value={`item-${subIndex}-${index}`}>
                   <AccordionTrigger>{qa.question}</AccordionTrigger>
                   <AccordionContent>
-                    {qa.answer}
+                    <MD>{qa.answer}</MD>
                   </AccordionContent>
                 </AccordionItem>
               ))}
