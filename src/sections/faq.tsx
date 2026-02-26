@@ -15,6 +15,7 @@ export default function FAQ() {
 
   return (
     <div className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
+      <div className="w-full md:w-2/3 md:mx-auto flex flex-col gap-6">
       <div className="px-6 mt-8">
         <h2 className="text-3xl font-bold">{t.sectionTitles.faq}</h2>
       </div>
@@ -35,6 +36,7 @@ export default function FAQ() {
             </Accordion>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

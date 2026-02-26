@@ -37,7 +37,7 @@ export default function ImageCarousel() {
           <img
             src={images[currentIndex]}
             alt={`Carousel image ${currentIndex + 1}`}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 object-cover"
           />
         </div>
 

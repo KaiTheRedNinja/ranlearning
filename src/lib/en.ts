@@ -180,11 +180,9 @@ const enContent: LocalizedContent = {
       {
         contactMethod: "Addresses",
         icon: "🏠",
-        detail: `
+        detail: `\
 - 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
-
 - #02-06 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
-
 - 709A East Coast Road S459064, Kinder Growth Learning Centre & 冉老师华文课堂`
       },
     ]

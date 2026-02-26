@@ -7,8 +7,8 @@ export default function Testimonials() {
   const colors = useColors();
 
   return (
-    <div className="py-12 px-4 md:px-8 lg:px-16" style={{ backgroundColor: colors.primaryBackground }}>
-      <div className="max-w-7xl mx-auto">
+    <div className="py-12 px-4" style={{ backgroundColor: colors.primaryBackground }}>
+      <div className="max-w-7xl md:w-2/3 mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
           {t.sectionTitles.testimonials}
         </h2>
