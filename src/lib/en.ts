@@ -165,22 +165,27 @@ const enContent: LocalizedContent = {
       {
         contactMethod: "Email",
         icon: "💌",
-        detail: "XXXXXXXX"
+        detail: "ranlearninghub@gmail.com"
       },
       {
         contactMethod: "Phone",
         icon: "☎️",
-        detail: "XXXXXXXX"
+        detail: "89891582"
       },
       {
         contactMethod: "WhatsApp",
         icon: "💬",
-        detail: "XXXXXXXX"
+        detail: "89891582 (10AM - 9PM)"
       },
       {
-        contactMethod: "Address",
+        contactMethod: "Addresses",
         icon: "🏠",
-        detail: "XXXXXXXX"
+        detail: `
+- 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
+
+- #02-06 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
+
+- 709A East Coast Road S459064, Kinder Growth Learning Centre & 冉老师华文课堂`
       },
     ]
   },
