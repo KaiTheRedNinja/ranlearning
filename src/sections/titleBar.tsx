@@ -17,6 +17,12 @@ import { useLanguage } from "@/lib/localisation";
 export default function TitleBar() {
   const { language, setLanguage, t } = useLanguage();
 
+  const registerNow = (
+    <Button variant="default">
+      {t.registerNow}
+    </Button>
+  )
+
   const langSwitcher = (
     // TODO: Make this a real language switcher
     <Button variant="secondary" onClick={() => setLanguage(language === 'en' ? 'zh' : 'en')}>
@@ -33,7 +39,7 @@ export default function TitleBar() {
   }
 
   const sectionHorizontalNavigator = (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-1 lg:gap-6 whitespace-nowrap">
       <Button variant="link" onClick={() => { scrollToSection("home") }}>
         {t.sectionTitles.home}
       </Button>
@@ -54,9 +60,6 @@ export default function TitleBar() {
       </Button>
       <Button variant="link" onClick={() => { scrollToSection("faq") }}>
         {t.sectionTitles.faq}
-      </Button>
-      <Button variant="default">
-        {t.registerNow}
       </Button>
     </div>
   )
@@ -105,16 +108,27 @@ export default function TitleBar() {
       {/* Left side: Circle + Title */}
       <div className="flex items-center gap-5">
         <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
-        <h1 className="text-2xl font-semibold text-gray-800">{t.ranlearning}</h1>
+        <h1 className="text-2xl font-semibold text-gray-800 whitespace-nowrap">
+          {t.ranlearning}
+        </h1>
       </div>
 
       {/* Middle: Horizontal Navigator, but only for non-small screens */}
-      <div className="hidden md:flex overflow-x-auto">
-        {sectionHorizontalNavigator}
+      <div className="hidden md:flex min-w-0 flex-1 justify-center px-6 relative">
+        <div className="pointer-events-none absolute left-3 top-0 h-full w-8 bg-gradient-to-r from-white to-transparent"/>
+        <div className="pointer-events-none absolute right-3 top-0 h-full w-8 bg-gradient-to-l from-white to-transparent"/>
+
+        <div className="w-full overflow-x-auto scrollbar-none flex items-center justify-center">
+          {sectionHorizontalNavigator}
+        </div>
       </div>
       
       {/* Right side: Flag + Hamburger */}
       <div className="flex items-center gap-4">
+        <div className="hidden md:flex">
+          {registerNow}
+        </div>
+
         {langSwitcher}
 
         <div className="lg:hidden">
