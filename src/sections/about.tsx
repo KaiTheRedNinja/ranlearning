@@ -7,7 +7,7 @@ export default function About() {
   const colors = useColors();
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.primaryBackground }}>
+    <section id="about" className="flex flex-col gap-6" style={{ backgroundColor: colors.primaryBackground }}>
       <div className="w-full md:w-2/3 md:mx-auto">
 
         <div className="px-6 mt-8">
@@ -40,6 +40,6 @@ export default function About() {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }

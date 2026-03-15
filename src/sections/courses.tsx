@@ -41,7 +41,7 @@ export default function Courses() {
   };
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
+    <section id="courses" className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
 
       {/* Constrained header content */}
       <div className="w-full md:w-2/3 md:mx-auto flex flex-col gap-6">
@@ -154,6 +154,6 @@ export default function Courses() {
         externalData={selectedItem}
         onClose={handleClose}
       />
-    </div>
+    </section>
   );
 }

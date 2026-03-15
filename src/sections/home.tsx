@@ -8,7 +8,7 @@ export default function Home() {
   const colors = useColors();
 
   return (
-    <div style={{ backgroundColor: colors.secondaryBackground }}>
+    <section id="home" style={{ backgroundColor: colors.secondaryBackground }}>
 
       {/* Mobile: stacked. Desktop: full-bleed left carousel + right content */}
       <div className="flex flex-col md:flex-row">
@@ -49,6 +49,6 @@ export default function Home() {
 
       </div>
 
-    </div>
+    </section>
   );
 }

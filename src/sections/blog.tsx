@@ -8,7 +8,7 @@ export default function Blog() {
   const colors = useColors();
 
   return (
-    <div className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
+    <section id="blog" className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
       <div className="w-full md:w-2/3 md:mx-auto flex flex-col gap-6">
       {/* Blog Section */}
       <div className="px-6 mt-8">
@@ -50,6 +50,6 @@ export default function Blog() {
         ))}
       </div>
       </div>
-    </div>
+    </section>
   );
 }

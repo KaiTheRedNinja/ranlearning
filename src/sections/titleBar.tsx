@@ -8,25 +8,10 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { useLanguage } from "@/lib/localisation";
 
 export default function TitleBar() {
@@ -39,16 +24,40 @@ export default function TitleBar() {
     </Button>
   )
 
+  function scrollToSection(id: string) {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    global.window.history.pushState(null, '', `#${id}`);
+  }
+
   const sectionHorizontalNavigator = (
     <div className="flex items-center gap-6">
-      <Button variant="link">{t.sectionTitles.home}</Button>
-      <Button variant="link">{t.sectionTitles.aboutUs}</Button>
-      <Button variant="link">{t.sectionTitles.programmesAndCourses}</Button>
-      <Button variant="link">{t.sectionTitles.testimonials}</Button>
-      <Button variant="link">{t.sectionTitles.blog}</Button>
-      <Button variant="link">{t.sectionTitles.contactUs}</Button>
-      <Button variant="link">{t.sectionTitles.faq}</Button>
-      <Button variant="default">{t.registerNow}</Button>
+      <Button variant="link" onClick={() => { scrollToSection("home") }}>
+        {t.sectionTitles.home}
+      </Button>
+      <Button variant="link" onClick={() => { scrollToSection("about") }}>
+        {t.sectionTitles.aboutUs}
+      </Button>
+      <Button variant="link" onClick={() => { scrollToSection("courses") }}>
+        {t.sectionTitles.programmesAndCourses}
+      </Button>
+      <Button variant="link" onClick={() => { scrollToSection("testimonials") }}>
+        {t.sectionTitles.testimonials}
+      </Button>
+      <Button variant="link" onClick={() => { scrollToSection("blog") }}>
+        {t.sectionTitles.blog}
+      </Button>
+      <Button variant="link" onClick={() => { scrollToSection("contact") }}>
+        {t.sectionTitles.contactUs}
+      </Button>
+      <Button variant="link" onClick={() => { scrollToSection("faq") }}>
+        {t.sectionTitles.faq}
+      </Button>
+      <Button variant="default">
+        {t.registerNow}
+      </Button>
     </div>
   )
 
@@ -59,25 +68,25 @@ export default function TitleBar() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="start">
         <DropdownMenuGroup>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('home') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.home}
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('about') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.aboutUs}
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('courses') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.programmesAndCourses}
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('testimonials') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.testimonials}
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('blog') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.blog}
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('contact') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.contactUs}
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => { scrollToSection('faq') }} data-slot="dropdown-menu-item">
             {t.sectionTitles.faq}
           </DropdownMenuItem>
         </DropdownMenuGroup>
@@ -99,8 +108,8 @@ export default function TitleBar() {
         <h1 className="text-2xl font-semibold text-gray-800">{t.ranlearning}</h1>
       </div>
 
-      {/* Middle: Horizontal Navigator, but only for large screens */}
-      <div className="hidden lg:flex">
+      {/* Middle: Horizontal Navigator, but only for non-small screens */}
+      <div className="hidden md:flex overflow-x-auto">
         {sectionHorizontalNavigator}
       </div>
       
