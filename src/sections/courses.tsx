@@ -12,12 +12,10 @@ export default function Courses() {
   const [selectedItem, setSelectedItem] = useState<ProgrammeInfo | null>(null);
 
   useEffect(() => {
-    // URL change handlers
     const handleUrlChange = () => {
       const hash = window.location.hash;
       if (hash && hash.startsWith('#')) {
         const itemId = hash.substring(1);
-        console.log("URL hash changed:", itemId);
         const item = t.coursesSection.regularProgrammes.find(item => String(item.id) === itemId);
         if (item) {
           setSelectedItem(item);
@@ -27,25 +25,18 @@ export default function Courses() {
       }
     };
     
-    // Initial check for direct URL access
     handleUrlChange();
-    
-    // Listen for hash changes
     window.addEventListener('hashchange', handleUrlChange);
-    
     return () => window.removeEventListener('hashchange', handleUrlChange);
   }, []);
 
-  // Handle item selection
   const handleItemClick = (item: ProgrammeInfo) => {
     setSelectedItem(item);
-    window.location.hash = item.id; // Update URL hash to reflect selected item
+    window.location.hash = item.id;
   };
 
-  // Handle closing the sheet
   const handleClose = () => {
     setSelectedItem(null);
-    // we use history.pushState to remove the hash from the URL, without also reloading the page
     global.window.history.pushState("", document.title, window.location.pathname);
   };
 
@@ -61,54 +52,27 @@ export default function Courses() {
           <MD>{t.coursesSection.courseSummary}</MD>
         </div>
         <div className="px-6">
-          <h2 className="text-3xl font-bold">{t.coursesSection.specialProgrameTitle}</h2>
-        </div>
-      </div>
-
-      {/* Full-width horizontal scroll with matching left indent */}
-      <div className="overflow-x-auto">
-        {/* Small screens: no left/right padding */}
-        <div
-          className="flex gap-4 pb-4 md:hidden px-6"
-          style={{ width: 'max-content' }}
-        >
-          {t.coursesSection.regularProgrammes.map((programme, index) => (
-            <div key={index} style={{ width: "400px", maxWidth: '66.666vw' }}>
-              <Card
-                title={programme.title}
-                description={<MD>{programme.description}</MD>}
-                backgroundColor={programme.backgroundColor}
-                titleColor={programme.titleColor}
-                bodyColor={programme.bodyColor}
-                showMore={true}
-                image={programme.fullImage ? `${programme.fullImage}` : undefined}
-                onClick={() => handleItemClick(programme)}
-              />
-            </div>
-          ))}
+          <h2 className="text-3xl font-bold">{t.coursesSection.regularProgrammeTitle}</h2>
         </div>
 
-        {/* Medium+ screens: with padding */}
+        {/* Regular programmes — auto-growing grid */}
         <div
-          className="hidden md:flex gap-4 pb-4 px-6 md:px-0"
+          className="grid gap-4 px-6"
           style={{
-            width: 'max-content',
-            paddingLeft: 'max(1.5rem, calc((100vw - (100vw * 2/3)) / 2 + 1.5rem))',
-            paddingRight: 'max(1.5rem, calc((100vw - (100vw * 2/3)) / 2 + 1.5rem))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
           }}
         >
           {t.coursesSection.regularProgrammes.map((programme, index) => (
-            <div key={index} style={{ width: "400px", maxWidth: '66.666vw' }}>
-              <Card
-                title={programme.title}
-                backgroundColor={programme.backgroundColor}
-                titleColor={programme.titleColor}
-                bodyColor={programme.bodyColor}
-                showMore={true}
-                image={programme.fullImage ? `${programme.fullImage}` : undefined}
-                onClick={() => handleItemClick(programme)}
-              />
-            </div>
+            <Card
+              key={index}
+              title={programme.title}
+              backgroundColor={programme.backgroundColor}
+              titleColor={programme.titleColor}
+              bodyColor={programme.bodyColor}
+              showMore={false}
+              image={programme.fullImage ? `${programme.fullImage}` : undefined}
+              onClick={() => handleItemClick(programme)}
+            />
           ))}
         </div>
       </div>
@@ -124,7 +88,7 @@ export default function Courses() {
 
       {/* Full-width horizontal scroll with matching left indent */}
       <div className="overflow-x-auto">
-        {/* Small screens: no left/right padding */}
+        {/* Small screens */}
         <div
           className="flex gap-4 pb-4 md:hidden px-6"
           style={{ width: 'max-content' }}
@@ -145,7 +109,7 @@ export default function Courses() {
           ))}
         </div>
 
-        {/* Medium+ screens: with padding */}
+        {/* Medium+ screens */}
         <div
           className="hidden md:flex gap-4 pb-4 px-6 md:px-0"
           style={{

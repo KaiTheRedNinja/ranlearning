@@ -60,13 +60,8 @@ Our programmes are strictly aligned with the Singapore MOE syllabus and school e
 Success is a partnership. We maintain close communication between teachers, parents, and students through regular feedback. By setting clear goals and focusing on strong study habits, we ensure every student makes steady, measurable progress.`
   },
   coursesSection: {
-    courseSummary: `Our regular weekly lessons systematically develop core Chinese language skills—covering Composition & Writing, Oral Training & Communication, Reading Comprehension & Analysis, and Listening & Exam Strategies—ensuring students are fully prepared for both school and national assessments.
-
-We offer courses across all levels: 
-- [小学华文补习](/courses/primary)
-- [中学华文](/courses/secondary)
-- [JC H1华文](/courses/jc)
-- [IBDP中文](/courses/ibdp)`,
+    courseSummary: `Our regular weekly lessons systematically develop core Chinese language skills—covering Composition & Writing, Oral Training & Communication, Reading Comprehension & Analysis, and Listening & Exam Strategies—ensuring students are fully prepared for both school and national assessments.`,
+    regularProgrammeTitle: "Regular Programmes",
     regularProgrammes: [
       {
         title: "Lower Primary (P1-P2)",
