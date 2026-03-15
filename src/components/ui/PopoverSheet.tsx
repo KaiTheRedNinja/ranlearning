@@ -64,7 +64,7 @@ export const PopoverSheet: React.FC<PopoverSheetProps> = ({ externalData, onClos
             </div>
 
             <div
-              className="p-6 overflow-auto space-y-4 whitespace-pre-line"
+              className="px-6 py-3 overflow-auto space-y-4 whitespace-pre-line"
               style={{ color: localData.bodyColor }}
             >
               {localData.fullImage && (

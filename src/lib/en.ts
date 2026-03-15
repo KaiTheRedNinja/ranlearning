@@ -69,11 +69,9 @@ We offer courses across all levels:
 - [IBDP中文](/courses/ibdp)`,
     regularProgrammes: [
       {
-        title: "Lower Primary (P1-P2): Sparking interest and building a stable foundation",
+        title: "Lower Primary (P1-P2)",
         id: "lower-primary-p1-p2",
-        description: `At this stage, we focus on sparking interest and boosting confidence. Interactive,
-contextual lessons create a natural, enjoyable environment where students develop
-a strong Chinese language foundation.
+        description: `At this stage, we focus on sparking interest and boosting confidence. Interactive, contextual lessons create a natural, enjoyable environment where students develop a strong Chinese language foundation.
 
 ### Key Learning Areas:
 
@@ -81,6 +79,101 @@ a strong Chinese language foundation.
 - Sentence Mastery: Building coherent sentences and organizing thoughts
 - Creative Writing: Writing simple paragraphs and develop stories from pictures
 - Vocabulary Growth: Building a strong vocabulary base through practice`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "Middle Primary (P3-P4)",
+        id: "middle-primary-p3-p4",
+        description: `At this stage, we bridge the gap between simple sentences and full-length compositions. We help students overcome common writing hurdles by mastering structure, logic, and vocabulary.
+
+### Key Learning Areas:
+- Writing Mastery: Frequent practice with personalized teacher feedback
+- Logic & Flow: Organizing ideas clearly for structured compositions
+- Applied Vocabulary: Expanding vocabulary base and using impactful words and phrases effectively
+- Precision & Clarity: Enhancing accuracy, sentence variety, and overall fluency
+
+### Our Goal:
+To develop confident, independent writers ready for a seamless transition to Upper Primary`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "Upper Primary (P5-P6)",
+        id: "upper-primary-p5-p6",
+        description: `Our upper primary programme is designed around PSLE preparation, with lessons closely aligned to exam requirements and question formats. The curriculum emphasizes the development of skills, strategies, and exam techniques to ensure comprehensive readiness.
+### Key Focus Areas:
+- PSLE Questions Drill: Targeted exercises for all PSLE question variations
+- Composition and Comprehension: Strengthening composition writing skills and reading skills
+- Exam Strategies: Time management and effective answering techniques
+- Error Analysis: Identifying common mistakes and ensuring consistent improvements
+
+Through a systematic approach of practice, explanation, correction, and refinement, students consolidate their foundation, enhance performance, and gain full confidence for PSLE success.`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "Secondary (S1-S4)",
+        id: "secondary-s1-s4",
+        description: `Our secondary programme focuses on strengthening exam skills while also building learning confidence and effective study strategies. Teachers tailor guidance based on each student’s level and goals, guiding them through a positive learning cycle: From not resisting Chinese --> Understanding Chinese --> building Chinese confidence --> Boosting results
+### Course content includes:
+- Composition & Writing Skills
+- Oral Training & Communication
+- Language Application & Exam Strategies
+- Reading Comprehension & Analysis
+
+Our curriculum provides systematic preparation for the O-level Chinese exam,
+helping students enhance overall performance.`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "IB Chinese",
+        id: "international-baccalaureate",
+        description: `Our IB Chinese lessons are offered in either group lessons or one-to-one lessons, designed around the 5 core IB themes. Lessons focus on developing language skills while meeting IB assessment requirements.
+
+### Key Learning Areas:
+- Oral & Presentation Skills: Expressing ideas confidently
+- Writing & Text Organization: Structuing clear, coherent responses
+- Reading & Analysis: Comprehension and critical interpretation
+- Listening & Information Retrieval: Understanding and extracting key ideas
+
+By familiarizing students with IB exam formats and marking criteria, we help them consistently improve both grades and overall language proficiency.`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "JC (A-level) Programmes",
+        id: "jc-programmes",
+        description: `We provide structured and targeted preparation for our JC students, supporting both H1 Chinese and H2 China Studies in Chinese. 
+### H1 Chinese 
+
+Aligned closely with A-level examination requirements, lessons focus on:
+- Comprehension & Text Analysis
+- Essay Writing structure & presentation of arguments
+- Exam Techniques & Language Application
+- Drills & Analysis of commonly tested questions
+
+Students develop strong comprehension and expression skills, building a stable and confident exam foundation
+
+### China Studies in Chinese (CSC)
+This programme emphasizes higher-order thinking and analytical writing. Key areas include:
+- Social Issues & Source Analysis
+- Argumentation & Logical Development
+- Structured Writing & Strategic Answering
+- Exam Requirements & Assessment Criteria
+
+Through systematic training, students enhance analytical depth and precision in expression, meeting the rigorous demands of the A-level examination.`,
         fullImage: null,
         backgroundColor: "#f0f9ff",
         titleColor: "#0c4a6e",
