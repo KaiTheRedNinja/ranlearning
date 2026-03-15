@@ -67,6 +67,24 @@ We offer courses across all levels:
 - [中学华文](/courses/secondary)
 - [JC H1华文](/courses/jc)
 - [IBDP中文](/courses/ibdp)`,
+    regularProgrammes: [
+      {
+        title: "Lower Primary (P1-P2): Sparking interest and building a stable foundation",
+        description: `At this stage, we focus on sparking interest and boosting confidence. Interactive,
+contextual lessons create a natural, enjoyable environment where students develop
+a strong Chinese language foundation.
+Key Learning Areas:
+
+- Oral Fluency: Picture-based conversation and structured expression
+- Sentence Mastery: Building coherent sentences and organizing thoughts
+- Creative Writing: Writing simple paragraphs and develop stories from pictures
+- Vocabulary Growth: Building a strong vocabulary base through practice`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      }
+    ],
     specialProgrameTitle: "Special Programmes",
     specialProgrammes: [
       {

@@ -7,6 +7,15 @@ import Markdown from 'markdown-to-jsx';
 // Define your localization structure with TypeScript
 type Language = 'en' | 'zh';
 
+export type ProgrammeInfo = {
+  title: string
+  description: string
+  fullImage: string | null
+  backgroundColor: string
+  titleColor: string
+  bodyColor: string
+}
+
 export interface LocalizedContent {
   ranlearning: string
   registerNow: string
@@ -35,15 +44,9 @@ export interface LocalizedContent {
   };
   coursesSection: {
     courseSummary: string
+    regularProgrammes: ProgrammeInfo[]
     specialProgrameTitle: string
-    specialProgrammes: {
-      title: string
-      description: string
-      fullImage: string | null
-      backgroundColor: string
-      titleColor: string
-      bodyColor: string
-    }[]
+    specialProgrammes: ProgrammeInfo[]
   };
   testimonialsSection: {
     reviews: {

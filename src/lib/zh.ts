@@ -59,6 +59,9 @@ const zhContent: LocalizedContent = {
     courseSummary: `常规课程每周一次，系统涵盖华文学习与考试中的核心能力模块：作文与写作表达、口试训练与语言组织、阅读理解与文本分析、听力理解与答题技巧。帮助学生巩固基础知识，为校内考试及国家考试做好充分准备。
 
 我们提供各阶段课程：[小学华文补习](/courses/primary) | [中学华文](/courses/secondary) | [JC H1华文](/courses/jc) | [IBDP中文](/courses/ibdp)`,
+    regularProgrammes: [
+      
+    ],
     specialProgrameTitle: "特色课程",
     specialProgrammes: [
       {

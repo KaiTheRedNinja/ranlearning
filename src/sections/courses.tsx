@@ -1,11 +1,53 @@
 'use client'
 import Card from "@/components/card"
-import { useLanguage, MD } from "@/lib/localisation"
+import { useLanguage, MD, ProgrammeInfo } from "@/lib/localisation"
 import { useColors } from "@/lib/colorContext"
+import { useEffect, useState } from "react";
+import { PopoverSheet } from "@/components/ui/PopoverSheet";
 
 export default function Courses() {
   const { t } = useLanguage();
   const colors = useColors();
+
+  const [selectedItem, setSelectedItem] = useState<ProgrammeInfo | null>(null);
+  const history = global.window.history;
+
+  useEffect(() => {
+    // URL change handlers
+    const handleUrlChange = () => {
+      const hash = window.location.hash;
+      if (hash && hash.startsWith('#')) {
+        const itemId = hash.substring(1);
+        const item = t.coursesSection.regularProgrammes.find(item => String(item.title) === itemId);
+        if (item) {
+          setSelectedItem(item);
+        }
+      } else {
+        setSelectedItem(null);
+      }
+    };
+    
+    // Initial check for direct URL access
+    handleUrlChange();
+    
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleUrlChange);
+    
+    return () => window.removeEventListener('hashchange', handleUrlChange);
+  }, []);
+
+  // Handle item selection
+  const handleItemClick = (item: ProgrammeInfo) => {
+    setSelectedItem(item);
+    window.location.hash = item.title;
+  };
+
+  // Handle closing the sheet
+  const handleClose = () => {
+    setSelectedItem(null);
+    // we use history.pushState to remove the hash from the URL, without also reloading the page
+    history.pushState("", document.title, window.location.pathname);
+  };
 
   return (
     <div className="flex flex-col gap-6" style={{ backgroundColor: colors.secondaryBackground }}>
@@ -18,6 +60,60 @@ export default function Courses() {
         <div className="px-6 gap-4 flex flex-col">
           <MD>{t.coursesSection.courseSummary}</MD>
         </div>
+        <div className="px-6">
+          <h2 className="text-3xl font-bold">{t.coursesSection.specialProgrameTitle}</h2>
+        </div>
+      </div>
+
+      {/* Full-width horizontal scroll with matching left indent */}
+      <div className="overflow-x-auto">
+        {/* Small screens: no left/right padding */}
+        <div
+          className="flex gap-4 pb-4 md:hidden px-6"
+          style={{ width: 'max-content' }}
+        >
+          {t.coursesSection.regularProgrammes.map((programme, index) => (
+            <div key={index} style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                title={programme.title}
+                description={<MD>{programme.description}</MD>}
+                backgroundColor={programme.backgroundColor}
+                titleColor={programme.titleColor}
+                bodyColor={programme.bodyColor}
+                showMore={true}
+                image={programme.fullImage ? `${programme.fullImage}` : undefined}
+                onClick={() => handleItemClick(programme)}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Medium+ screens: with padding */}
+        <div
+          className="hidden md:flex gap-4 pb-4 px-6 md:px-0"
+          style={{
+            width: 'max-content',
+            paddingLeft: 'max(1.5rem, calc((100vw - (100vw * 2/3)) / 2 + 1.5rem))',
+            paddingRight: 'max(1.5rem, calc((100vw - (100vw * 2/3)) / 2 + 1.5rem))',
+          }}
+        >
+          {t.coursesSection.regularProgrammes.map((programme, index) => (
+            <div key={index} style={{ width: "400px", maxWidth: '66.666vw' }}>
+              <Card
+                title={programme.title}
+                backgroundColor={programme.backgroundColor}
+                titleColor={programme.titleColor}
+                bodyColor={programme.bodyColor}
+                showMore={true}
+                image={programme.fullImage ? `${programme.fullImage}` : undefined}
+                onClick={() => handleItemClick(programme)}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full md:w-2/3 md:mx-auto flex flex-col gap-6">
         <div className="mx-auto w-full flex flex-col items-center">
           <hr className="my-0 border-t border-black w-[100px]" />
         </div>
@@ -43,6 +139,7 @@ export default function Courses() {
                 bodyColor={programme.bodyColor}
                 showMore={true}
                 image={programme.fullImage ? `${programme.fullImage}` : undefined}
+                onClick={() => handleItemClick(programme)}
               />
             </div>
           ))}
@@ -89,7 +186,10 @@ export default function Courses() {
           </div>
         </div>
       </div>
-
+      <PopoverSheet
+        externalData={selectedItem}
+        onClose={handleClose}
+      />
     </div>
   );
 }
