@@ -56,12 +56,119 @@ const zhContent: LocalizedContent = {
 我们始终重视老师·家长·学生三方之间的沟通与配合，通过持续反馈与跟进，协助学生逐步建立良好的学习习惯与积极的学习态度，引导孩子设立明确目标并持续进步。`
   },
   coursesSection: {
-    courseSummary: `常规课程每周一次，系统涵盖华文学习与考试中的核心能力模块：作文与写作表达、口试训练与语言组织、阅读理解与文本分析、听力理解与答题技巧。帮助学生巩固基础知识，为校内考试及国家考试做好充分准备。
-
-我们提供各阶段课程：[小学华文补习](/courses/primary) | [中学华文](/courses/secondary) | [JC H1华文](/courses/jc) | [IBDP中文](/courses/ibdp)`,
+    courseSummary: `常规课程每周一次，系统涵盖华文学习与考试中的核心能力模块：作文与写作表达、口试训练与语言组织、阅读理解与文本分析、听力理解与答题技巧。帮助学生巩固基础知识，为校内考试及国家考试做好充分准备。`,
     regularProgrammeTitle: "常规课程",
     regularProgrammes: [
-      
+      {
+        title: "Lower Primary (P1-P2)",
+        id: "lower-primary-p1-p2",
+        description: `低年级阶段以培养兴趣与建立信心为核心。课堂强调趣味性与互动性， 通过情境教学与多样化教学活动， 激发学生对华文的学习动力，使孩子在轻松自然的环境中逐步建立语言基础。
+
+**教学重点包括：**
+- 看图说话与基础表达训练
+- 完整句子与语言组织能力
+- 看图写句子与简单段落
+- 词汇积累与运用能力培养
+
+通过系统的词汇输入与反复运用， 帮助学生扩大常用词汇量， 提升理解能力与表达能力，为后续阅读与写作学习打下扎实基础。`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "Middle Primary (P3-P4)",
+        id: "middle-primary-p3-p4",
+        description: `中年级阶段以写作能力培养为核心，重点强化作文训练。课程围绕学生常见写作难点进行系统指导， 帮助学生掌握看图作文与基础写作的结构与表达方法。
+
+### 课程重点：
+- 大量作文练习与针对性修改
+- 作文结构与内容组织训练
+- 好词好句的积累与运用
+- 提升语言表达的准确度与连贯性
+
+通过持续写作与反馈， 逐步培养学生独立完成作文的能力， 并为高年级学习做好准备。`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "Upper Primary (P5-P6)",
+        id: "upper-primary-p5-p6",
+        description: `高年级课程全面围绕 PSLE 会考准备 进行设计。教学内容严格对标考试要求与题型，注重能力、技巧与应试策略的综合提升。
+
+### 课程侧重：
+- PSLE 题型专项训练
+- 作文与阅读理解强化
+- 答题技巧与时间管理
+- 常见失分点分析与改进
+
+通过 练习 · 讲解 · 改正 · 精进 的系统模式，帮助学生在关键阶段稳固基础、提升表现，为 PSLE 考试做好充分准备。`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "Secondary (S1-S4)",
+        id: "secondary-s1-s4",
+        description: `中学课程在强化考试技能的同时， 更注重学习信心与学习策略的建立。 教师根据学生的水平与目标制定针对性辅导方向，引导学生形成良性学习循环： 不排斥华文 → 能够理解华文 → 建立信心 → 提升成绩
+
+### 课程内容涵盖：
+-作文与写作技巧
+-口试训练与表达能力
+-语文应用与答题策略
+-阅读理解与分析能力
+
+系统备考 O 水准华文考试，提升综合表现。`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "IB Chinese",
+        id: "international-baccalaureate",
+        description: `课程围绕 IB 华文五大主题展开，注重语言能力与考试要求的结合。 训练模块
+
+### 包括：
+- 口试训练与观点表达
+- 写作与文本组织能力
+- 阅读理解与内容分析
+- 听力理解与信息提取
+
+在熟悉考试形式与评分标准的基础上，帮助学生稳定提升成绩与综合能力。`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
+      {
+        title: "JC (A-level) Programmes",
+        id: "jc-programmes",
+        description: `为初级学院学生提供系统且有针对性的 A Level 课程辅导，涵盖：
+
+### H1 华文课程：课程围绕 A Level H1 华文考试要求展开，重点强化：
+- 阅读理解与文本分析能力
+- 写作与论述表达技巧
+- 语言运用与答题策略
+- 常见题型解析与训练
+
+帮助学生在理解与表达层面建立稳定的考试能力。
+
+### 中国通识课程（ Studies in Chinese） 课程着重培养学生的思辨能力与论述能力，教学重点包括：
+- 社会议题与材料分析
+- 论证结构与观点表达
+- 写作逻辑与答题技巧
+- 考试题型与评分要求解析
+
+通过系统训练，帮助学生提升分析深度与表达准确度，应对 A Level 考试中的高阶要求。`,
+        fullImage: null,
+        backgroundColor: "#f0f9ff",
+        titleColor: "#0c4a6e",
+        bodyColor: "#475569"
+      },
     ],
     specialProgrameTitle: "特色课程",
     specialProgrammes: [
