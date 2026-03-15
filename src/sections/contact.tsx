@@ -1,5 +1,5 @@
 'use client';
-import { useLanguage } from "@/lib/localisation";
+import { MD, useLanguage } from "@/lib/localisation";
 import { useColors } from "@/lib/colorContext";
 
 export default function Contact() {
@@ -41,9 +41,9 @@ export default function Contact() {
           {/* Mobile: original stacked paragraphs */}
           <div className="flex flex-col gap-3 md:hidden">
             {t.contactSection.contactItems.map((item, index) => (
-              <p key={index} className="text-xl whitespace-pre-line">
-                <b>{item.icon} {item.contactMethod}</b>: <br/> {item.detail}
-              </p>
+              <div key={index} className="text-xl whitespace-pre-line">
+                <b>{item.icon} {item.contactMethod}</b>: <br/> <MD>{item.detail}</MD>
+              </div>
             ))}
           </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
                   <td className="pr-4 font-bold whitespace-nowrap">
                     {item.icon} {item.contactMethod + ":"}
                   </td>
-                  <td className="whitespace-pre-line">{item.detail}</td>
+                  <td className="whitespace-pre-line"><MD>{item.detail}</MD></td>
                 </tr>
               ))}
             </tbody>

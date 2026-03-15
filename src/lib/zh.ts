@@ -14,7 +14,7 @@ const zhContent: LocalizedContent = {
     faq: "FAQ"
   },
   homeSection: {
-    briefIntroduction: `在 Ran Enrichment Learning，我们专注于为学生提供高效、系统化的华文提升课程，涵盖写作、阅读理解、语言应用与口试表达等关键能力。
+    briefIntroduction: `在 **Ran Enrichment Learning**，我们专注于为学生提供高效、系统化的华文提升课程，涵盖写作、阅读理解、语言应用与口试表达等关键能力。
 
 我们熟悉本地O水准、IP 课程、IBDP课程，以及JC课程需求，也深谙考试趋势，通过技巧教学、写作框架训练及批判性思维培养，帮助学生在考试中脱颖而出。
 

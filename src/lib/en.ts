@@ -198,12 +198,12 @@ We offer courses across all levels:
       {
         contactMethod: "Phone",
         icon: "☎️",
-        detail: "89891582"
+        detail: "[+65 8989 1582](tel:+6589891582)"
       },
       {
         contactMethod: "WhatsApp",
         icon: "💬",
-        detail: "89891582 (10AM - 9PM)"
+        detail: "[+65 8989 1582](https://wa.me/6589891582) (10AM - 9PM)"
       },
       {
         contactMethod: "Addresses",
@@ -304,7 +304,7 @@ We offer courses across all levels:
           }
         ]
       },
-      {
+      { 
         title: "6. Technical Support",
         questionsAndAnswers: [
           {
