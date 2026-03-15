@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react"
-import { ProgrammeInfo } from "@/lib/localisation"
+import { ProgrammeInfo, MD } from "@/lib/localisation"
 
 type PopoverSheetProps = {
   externalData: ProgrammeInfo | null
@@ -75,7 +75,7 @@ export const PopoverSheet: React.FC<PopoverSheetProps> = ({ externalData, onClos
                 />
               )}
 
-              <p>{localData.description}</p>
+              <MD>{localData.description}</MD>
             </div>
           </div>
         )}

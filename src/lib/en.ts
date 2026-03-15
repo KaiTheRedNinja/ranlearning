@@ -70,10 +70,12 @@ We offer courses across all levels:
     regularProgrammes: [
       {
         title: "Lower Primary (P1-P2): Sparking interest and building a stable foundation",
+        id: "lower-primary-p1-p2",
         description: `At this stage, we focus on sparking interest and boosting confidence. Interactive,
 contextual lessons create a natural, enjoyable environment where students develop
 a strong Chinese language foundation.
-Key Learning Areas:
+
+### Key Learning Areas:
 
 - Oral Fluency: Picture-based conversation and structured expression
 - Sentence Mastery: Building coherent sentences and organizing thoughts
@@ -83,12 +85,13 @@ Key Learning Areas:
         backgroundColor: "#f0f9ff",
         titleColor: "#0c4a6e",
         bodyColor: "#475569"
-      }
+      },
     ],
     specialProgrameTitle: "Special Programmes",
     specialProgrammes: [
       {
         title: "3 Day Holiday Programme",
+        id: "3-day-holiday-programme",
         description: "Compo + Compre + Oral: 3 days, first-come-first served. Ms Ran and team has extensive teaching experience and has a track record of stellar results.",
         fullImage: "Programme_3 Day.jpg",
         backgroundColor: "#f0f9ff",
@@ -97,6 +100,7 @@ Key Learning Areas:
       },
       {
         title: "June Holiday Programme",
+        id: "june-holiday-programme",
         description: "5 Day programme for PSLE, S1-S3 and S3 Higher Chinese students",
         fullImage: "Programme_June Hol.jpg",
         backgroundColor: "#fffbeb",
@@ -105,6 +109,7 @@ Key Learning Areas:
       },
       {
         title: "O-Level Chinese Oral Booster Course",
+        id: "o-level-oral-booster",
         description: "10-lesson intensive oral training camp. Each lesson covers 2–3 oral topics drawn from current affairs and commonly tested themes. In-house materials provide key discussion points and high-frequency expressions. Every student gets individual practice time and personalised feedback—building exam rhythm, logical expression, and confident on-the-spot performance.",
         fullImage: "Programme_O lvl oral.jpg",
         backgroundColor: "#fef2f2",
@@ -113,6 +118,7 @@ Key Learning Areas:
       },
       {
         title: "Fun with PinYin!",
+        id: "fun-with-pinyin",
         description: "Is your child struggling with Chinese pronunciation or afraid to speak? Our Pinyin Mastery Class is the solution!",
         fullImage: "Programme_Pinyin.jpg",
         backgroundColor: "#f0fdf4",

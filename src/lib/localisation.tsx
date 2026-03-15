@@ -9,6 +9,7 @@ type Language = 'en' | 'zh';
 
 export type ProgrammeInfo = {
   title: string
+  id: string
   description: string
   fullImage: string | null
   backgroundColor: string

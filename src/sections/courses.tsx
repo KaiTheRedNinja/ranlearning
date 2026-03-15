@@ -10,7 +10,6 @@ export default function Courses() {
   const colors = useColors();
 
   const [selectedItem, setSelectedItem] = useState<ProgrammeInfo | null>(null);
-  const history = global.window.history;
 
   useEffect(() => {
     // URL change handlers
@@ -18,7 +17,8 @@ export default function Courses() {
       const hash = window.location.hash;
       if (hash && hash.startsWith('#')) {
         const itemId = hash.substring(1);
-        const item = t.coursesSection.regularProgrammes.find(item => String(item.title) === itemId);
+        console.log("URL hash changed:", itemId);
+        const item = t.coursesSection.regularProgrammes.find(item => String(item.id) === itemId);
         if (item) {
           setSelectedItem(item);
         }
@@ -39,14 +39,14 @@ export default function Courses() {
   // Handle item selection
   const handleItemClick = (item: ProgrammeInfo) => {
     setSelectedItem(item);
-    window.location.hash = item.title;
+    window.location.hash = item.id; // Update URL hash to reflect selected item
   };
 
   // Handle closing the sheet
   const handleClose = () => {
     setSelectedItem(null);
     // we use history.pushState to remove the hash from the URL, without also reloading the page
-    history.pushState("", document.title, window.location.pathname);
+    global.window.history.pushState("", document.title, window.location.pathname);
   };
 
   return (

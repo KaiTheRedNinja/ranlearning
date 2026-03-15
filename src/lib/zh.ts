@@ -66,6 +66,7 @@ const zhContent: LocalizedContent = {
     specialProgrammes: [
       {
         title: "3天假期课程",
+        id: "3-day-holiday-programme",
         description: "作文+阅读理解+口试：3天课程，先到先得。冉老师及团队拥有丰富的教学经验，学生成绩屡创佳绩。",
         fullImage: "Programme_3 Day.jpg",
         backgroundColor: "#f0f9ff",
@@ -74,6 +75,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "六月假期课程",
+        id: "june-holiday-programme",
         description: "针对PSLE、中一至中三及中三高华学生的5天强化课程。",
         fullImage: "Programme_June Hol.jpg",
         backgroundColor: "#fffbeb",
@@ -82,6 +84,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "O水准华文口试强化课程",
+        id: "o-level-oral-booster",
         description: "共10节课的口试集训营。每节课涵盖2至3个口试题材，紧扣社会热点与常考主题，提供高频表达素材与应答思路。每位学生均有充分练习与个别反馈机会，帮助熟悉考试节奏，提升表达逻辑与临场表现。",
         fullImage: "Programme_O lvl oral.jpg",
         backgroundColor: "#fef2f2",
@@ -90,6 +93,7 @@ const zhContent: LocalizedContent = {
       },
       {
         title: "趣味拼音课程",
+        id: "fun-with-pinyin",
         description: "您的孩子是否在华文发音上遇到困难，或不敢开口说话？我们的拼音精通课程正是为此而设！",
         fullImage: "Programme_Pinyin.jpg",
         backgroundColor: "#f0fdf4",
