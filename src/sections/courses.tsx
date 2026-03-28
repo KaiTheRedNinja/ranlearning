@@ -145,7 +145,9 @@ export default function Courses() {
             }}
           >
             <p className="py-4 px-8 text-center font-bold text-xl">
-              {t.registerNow}
+              <a href="https://forms.gle/LGsR3QcgAsE5cdMf8" target="_blank" rel="noopener noreferrer">
+                {t.registerNow}
+              </a>
             </p>
           </div>
         </div>

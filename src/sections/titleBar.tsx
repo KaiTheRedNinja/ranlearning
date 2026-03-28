@@ -19,7 +19,9 @@ export default function TitleBar() {
 
   const registerNow = (
     <Button variant="default">
-      {t.registerNow}
+      <a href="https://forms.gle/LGsR3QcgAsE5cdMf8" target="_blank" rel="noopener noreferrer">
+        {t.registerNow}
+      </a>
     </Button>
   )
 
@@ -96,7 +98,9 @@ export default function TitleBar() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            {t.registerNow}
+            <a href="https://forms.gle/LGsR3QcgAsE5cdMf8" target="_blank" rel="noopener noreferrer">
+              {t.registerNow}
+            </a>
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>

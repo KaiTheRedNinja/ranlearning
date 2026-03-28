@@ -173,6 +173,15 @@ const zhContent: LocalizedContent = {
     specialProgrameTitle: "特色课程",
     specialProgrammes: [
       {
+        title: "O水准华文口试强化课程（4月2026年）",
+        id: "o-level-oral-booster-2026",
+        description: "共10节课的口试集训营。每节课涵盖2至3个口试题材，紧扣社会热点与常考主题，提供高频表达素材与应答思路。每位学生均有充分练习与个别反馈机会，帮助熟悉考试节奏，提升表达逻辑与临场表现。",
+        fullImage: "Programme_O lvl oral_26.jpg",
+        backgroundColor: "#fef2f2",
+        titleColor: "#7f1d1d",
+        bodyColor: "#57534e"
+      },
+      {
         title: "3天假期课程",
         id: "3-day-holiday-programme",
         description: "作文+阅读理解+口试：3天课程，先到先得。冉老师及团队拥有丰富的教学经验，学生成绩屡创佳绩。",
@@ -191,7 +200,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#78716c"
       },
       {
-        title: "O水准华文口试强化课程",
+        title: "O水准华文口试强化课程（4月2025年）",
         id: "o-level-oral-booster",
         description: "共10节课的口试集训营。每节课涵盖2至3个口试题材，紧扣社会热点与常考主题，提供高频表达素材与应答思路。每位学生均有充分练习与个别反馈机会，帮助熟悉考试节奏，提升表达逻辑与临场表现。",
         fullImage: "Programme_O lvl oral.jpg",
@@ -315,7 +324,7 @@ const zhContent: LocalizedContent = {
         contactMethod: "Addresses",
         icon: "🏠",
         detail: `- 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
-- #02-06 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
+- #04-12 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
 - 709A East Coast Road S459064, Kinder Growth Learning Centre & 冉老师华文课堂`
       }
     ]

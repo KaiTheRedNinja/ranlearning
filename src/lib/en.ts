@@ -178,6 +178,15 @@ Through systematic training, students enhance analytical depth and precision in 
     specialProgrameTitle: "Special Programmes",
     specialProgrammes: [
       {
+        title: "O-Level Chinese Oral Booster Course (Apr 2026)",
+        id: "o-level-oral-booster-2026",
+        description: "10-lesson intensive oral training camp. Each lesson covers 2–3 oral topics drawn from current affairs and commonly tested themes. In-house materials provide key discussion points and high-frequency expressions. Every student gets individual practice time and personalised feedback—building exam rhythm, logical expression, and confident on-the-spot performance.",
+        fullImage: "Programme_O lvl oral_26.jpg",
+        backgroundColor: "#fef2f2",
+        titleColor: "#7f1d1d",
+        bodyColor: "#57534e"
+      },
+      {
         title: "3 Day Holiday Programme",
         id: "3-day-holiday-programme",
         description: "Compo + Compre + Oral: 3 days, first-come-first served. Ms Ran and team has extensive teaching experience and has a track record of stellar results.",
@@ -196,7 +205,7 @@ Through systematic training, students enhance analytical depth and precision in 
         bodyColor: "#78716c"
       },
       {
-        title: "O-Level Chinese Oral Booster Course",
+        title: "O-Level Chinese Oral Booster Course (Apr 2025)",
         id: "o-level-oral-booster",
         description: "10-lesson intensive oral training camp. Each lesson covers 2–3 oral topics drawn from current affairs and commonly tested themes. In-house materials provide key discussion points and high-frequency expressions. Every student gets individual practice time and personalised feedback—building exam rhythm, logical expression, and confident on-the-spot performance.",
         fullImage: "Programme_O lvl oral.jpg",
@@ -321,7 +330,7 @@ Through systematic training, students enhance analytical depth and precision in 
         contactMethod: "Addresses",
         icon: "🏠",
         detail: `- 215N Upper Thomson Road S574349 (upper thomson road), TSL &冉老师华文课堂
-- #02-06 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
+- #04-12 Beauty World Centre S588177, Kinder Growth Learning Centre & 冉老师华文课堂
 - 709A East Coast Road S459064, Kinder Growth Learning Centre & 冉老师华文课堂`
       }
     ]

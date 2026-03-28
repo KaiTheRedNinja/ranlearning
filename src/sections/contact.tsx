@@ -28,7 +28,9 @@ export default function Contact() {
               className="font-bold flex-1 p-6 text-center"
               style={{ fontSize: '36px', color: colors.titleText, lineHeight: '1.2' }}
             >
-              {t.registerNow}
+              <a href="https://forms.gle/LGsR3QcgAsE5cdMf8" target="_blank" rel="noopener noreferrer">
+                {t.registerNow}
+              </a>
             </h1>
           </div>
         </div>
