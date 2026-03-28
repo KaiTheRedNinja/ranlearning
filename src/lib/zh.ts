@@ -60,7 +60,7 @@ const zhContent: LocalizedContent = {
     regularProgrammeTitle: "常规课程",
     regularProgrammes: [
       {
-        title: "Lower Primary (P1-P2)",
+        title: "小学 (P1-P2)",
         id: "lower-primary-p1-p2",
         description: `低年级阶段以培养兴趣与建立信心为核心。课堂强调趣味性与互动性， 通过情境教学与多样化教学活动， 激发学生对华文的学习动力，使孩子在轻松自然的环境中逐步建立语言基础。
 
@@ -77,7 +77,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#475569"
       },
       {
-        title: "Middle Primary (P3-P4)",
+        title: "小学 (P3-P4)",
         id: "middle-primary-p3-p4",
         description: `中年级阶段以写作能力培养为核心，重点强化作文训练。课程围绕学生常见写作难点进行系统指导， 帮助学生掌握看图作文与基础写作的结构与表达方法。
 
@@ -94,7 +94,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#475569"
       },
       {
-        title: "Upper Primary (P5-P6)",
+        title: "小学 (P5-P6)",
         id: "upper-primary-p5-p6",
         description: `高年级课程全面围绕 PSLE 会考准备 进行设计。教学内容严格对标考试要求与题型，注重能力、技巧与应试策略的综合提升。
 
@@ -111,7 +111,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#475569"
       },
       {
-        title: "Secondary (S1-S4)",
+        title: "中学 (S1-S4)",
         id: "secondary-s1-s4",
         description: `中学课程在强化考试技能的同时， 更注重学习信心与学习策略的建立。 教师根据学生的水平与目标制定针对性辅导方向，引导学生形成良性学习循环： 不排斥华文 → 能够理解华文 → 建立信心 → 提升成绩
 
@@ -128,7 +128,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#475569"
       },
       {
-        title: "IB Chinese",
+        title: "IB",
         id: "international-baccalaureate",
         description: `课程围绕 IB 华文五大主题展开，注重语言能力与考试要求的结合。 训练模块
 
@@ -145,7 +145,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#475569"
       },
       {
-        title: "JC (A-level) Programmes",
+        title: "JC (A-level)",
         id: "jc-programmes",
         description: `为初级学院学生提供系统且有针对性的 A Level 课程辅导，涵盖：
 

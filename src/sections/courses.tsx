@@ -9,7 +9,7 @@ export default function Courses() {
   const { t } = useLanguage();
   const colors = useColors();
 
-  const [selectedItem, setSelectedItem] = useState<ProgrammeInfo | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
 
   useEffect(() => {
     const handleUrlChange = () => {
@@ -18,10 +18,10 @@ export default function Courses() {
         const itemId = hash.substring(1);
         const item = t.coursesSection.regularProgrammes.find(item => String(item.id) === itemId);
         if (item) {
-          setSelectedItem(item);
+          setSelectedId(item.id);
         }
       } else {
-        setSelectedItem(null);
+        setSelectedId(null);
       }
     };
     
@@ -31,12 +31,12 @@ export default function Courses() {
   }, []);
 
   const handleItemClick = (item: ProgrammeInfo) => {
-    setSelectedItem(item);
+    setSelectedId(item.id);
     window.location.hash = item.id;
   };
 
   const handleClose = () => {
-    setSelectedItem(null);
+    setSelectedId(null);
     global.window.history.pushState("", document.title, window.location.pathname);
   };
 
@@ -103,7 +103,7 @@ export default function Courses() {
                 bodyColor={programme.bodyColor}
                 showMore={true}
                 image={programme.fullImage ? `${programme.fullImage}` : undefined}
-                onClick={() => handleItemClick(programme)}
+                onClick={() => window.location.hash = programme.id}
               />
             </div>
           ))}
@@ -153,7 +153,7 @@ export default function Courses() {
         </div>
       </div>
       <PopoverSheet
-        externalData={selectedItem}
+        externalData={t.coursesSection.regularProgrammes.find(item => item.id === selectedId) || null}
         onClose={handleClose}
       />
     </section>
