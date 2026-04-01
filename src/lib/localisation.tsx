@@ -47,7 +47,7 @@ export interface LocalizedContent {
     courseSummary: string
     regularProgrammeTitle: string
     regularProgrammes: ProgrammeInfo[]
-    specialProgrameTitle: string
+    specialProgrammeTitle: string
     specialProgrammes: ProgrammeInfo[]
   };
   testimonialsSection: {

@@ -170,7 +170,7 @@ const zhContent: LocalizedContent = {
         bodyColor: "#475569"
       },
     ],
-    specialProgrameTitle: "特色课程",
+    specialProgrammeTitle: "特色课程",
     specialProgrammes: [
       {
         title: "O水准华文口试强化课程（4月2026年）",

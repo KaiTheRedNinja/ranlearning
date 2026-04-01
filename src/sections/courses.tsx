@@ -16,7 +16,7 @@ export default function Courses() {
       const hash = window.location.hash;
       if (hash && hash.startsWith('#')) {
         const itemId = hash.substring(1);
-        const item = t.coursesSection.regularProgrammes.find(item => String(item.id) === itemId);
+        const item = (t.coursesSection.regularProgrammes.concat(t.coursesSection.specialProgrammes)).find(item => String(item.id) === itemId);
         if (item) {
           setSelectedId(item.id);
         }
@@ -69,7 +69,7 @@ export default function Courses() {
               backgroundColor={programme.backgroundColor}
               titleColor={programme.titleColor}
               bodyColor={programme.bodyColor}
-              showMore={false}
+              showMore={true}
               image={programme.fullImage ? `${programme.fullImage}` : undefined}
               onClick={() => handleItemClick(programme)}
             />
@@ -82,7 +82,7 @@ export default function Courses() {
           <hr className="my-0 border-t border-black w-[100px]" />
         </div>
         <div className="px-6">
-          <h2 className="text-3xl font-bold">{t.coursesSection.specialProgrameTitle}</h2>
+          <h2 className="text-3xl font-bold">{t.coursesSection.specialProgrammeTitle}</h2>
         </div>
       </div>
 
@@ -103,7 +103,7 @@ export default function Courses() {
                 bodyColor={programme.bodyColor}
                 showMore={true}
                 image={programme.fullImage ? `${programme.fullImage}` : undefined}
-                onClick={() => window.location.hash = programme.id}
+                onClick={() => handleItemClick(programme)}
               />
             </div>
           ))}
@@ -128,6 +128,7 @@ export default function Courses() {
                 bodyColor={programme.bodyColor}
                 showMore={true}
                 image={programme.fullImage ? `${programme.fullImage}` : undefined}
+                onClick={() => handleItemClick(programme)}
               />
             </div>
           ))}
@@ -153,7 +154,7 @@ export default function Courses() {
         </div>
       </div>
       <PopoverSheet
-        externalData={t.coursesSection.regularProgrammes.find(item => item.id === selectedId) || null}
+        externalData={(t.coursesSection.regularProgrammes.concat(t.coursesSection.specialProgrammes)).find(item => item.id === selectedId) || null}
         onClose={handleClose}
       />
     </section>

@@ -175,7 +175,7 @@ Through systematic training, students enhance analytical depth and precision in 
         bodyColor: "#475569"
       },
     ],
-    specialProgrameTitle: "Special Programmes",
+    specialProgrammeTitle: "Special Programmes",
     specialProgrammes: [
       {
         title: "O-Level Chinese Oral Booster Course (Apr 2026)",
