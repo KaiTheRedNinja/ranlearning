@@ -273,11 +273,6 @@ Through systematic training, students enhance analytical depth and precision in 
     ],
     sampleMaterials: [
       {
-        title: "[TEST] Chinese Studies Questions",
-        shortDescription: null,
-        pdfName: "2025 H2中国通识问答题习题集.pdf"
-      },
-      {
         title: "Practical Chinese for Middle School - Private Email + Official Email",
         shortDescription: null,
         pdfName: "中学实用文-私人电邮+公务电邮.pdf"
