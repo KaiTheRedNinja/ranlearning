@@ -256,6 +256,9 @@ Through systematic training, students enhance analytical depth and precision in 
       },
       {
         content: "My child used to fear Chinese until he began learning under 陈老师 【Teacher Chen】, her humorous approach and guidance helped him to improve his grades in school. Thanks to her, he was able to achieve his desired grade in O-level Chinese."
+      },
+      {
+        content: "I really enjoy 全老师 【Teacher Quan】class, I look forward to learning Chinese every week!"
       }
     ]
   },
