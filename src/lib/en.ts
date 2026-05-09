@@ -253,6 +253,9 @@ Through systematic training, students enhance analytical depth and precision in 
       },
       {
         content: "于老师 【Teacher Yu】 is very engaging and helps my child improve her P5 grades, really grateful to have her as my child's teacher."
+      },
+      {
+        content: "My child used to fear Chinese until he began learning under 陈老师 【Teacher Chen】, her humorous approach and guidance helped him to improve his grades in school. Thanks to her, he was able to achieve his desired grade in O-level Chinese."
       }
     ]
   },
