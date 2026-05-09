@@ -259,6 +259,9 @@ Through systematic training, students enhance analytical depth and precision in 
       },
       {
         content: "I really enjoy 全老师 【Teacher Quan】class, I look forward to learning Chinese every week!"
+      },
+      {
+        content: "陈老师 【Teacher Chen】is a really responsible and capable teacher, with her help, my child achieved tremendous improvement in her Chinese grades. She is also more willing to learn Chinese, thank you teacher!"
       }
     ]
   },
