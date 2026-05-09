@@ -250,6 +250,9 @@ Through systematic training, students enhance analytical depth and precision in 
       },
       {
         content: "7 points! Thank you, teacher."
+      },
+      {
+        content: "于老师 【Teacher Yu】 is very engaging and helps my child improve her P5 grades, really grateful to have her as my child's teacher."
       }
     ]
   },
