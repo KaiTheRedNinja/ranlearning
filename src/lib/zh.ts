@@ -172,6 +172,15 @@ const zhContent: LocalizedContent = {
     ],
     specialProgrammeTitle: "特色课程",
     specialProgrammes: [
+        {
+        title: "华文假期班（11月&12月2026年）",
+        id: "chinese-holiday-programme-2026",
+        description: "为各个年级的学生提供帮助，预备接下来的学年和来临的O考考试",
+        fullImage: "Programme_O lvl oral_26.jpg",
+        backgroundColor: "#fef2f2",
+        titleColor: "#7f1d1d",
+        bodyColor: "#57534e"
+      },
       {
         title: "O水准华文口试强化课程（4月2026年）",
         id: "o-level-oral-booster-2026",
