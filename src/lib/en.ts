@@ -181,7 +181,7 @@ Through systematic training, students enhance analytical depth and precision in 
         title: "2027 Nov&Dec Holiday Programme",
         id: "2027-Nov&Dec-Holiday-Programme",
         description: "Structured 3-day holiday programme for different students, help to prepare students for the next academic year. Each lesson is specially curated to target weak spots and strengthen answering skills.",
-        fullImage: "2027 Nov&Dec Holiday Programme_01.jpg",
+        fullImage: "2027 Nov&Dec Holiday Program_01.jpg",
         backgroundColor: "#fef2f2",
         titleColor: "#7f1d1d",
         bodyColor: "#57534e"
