@@ -172,6 +172,15 @@ const zhContent: LocalizedContent = {
     ],
     specialProgrammeTitle: "特色课程",
     specialProgrammes: [
+       {
+        title: "中一预备班(2027)",
+        id: "S1-holiday-programme",
+        description: "针对中一新生的假期预备班，帮助中一学生提前适应新的学年",
+        fullImage: "S1 Holiday Programme_26.jpeg",
+        backgroundColor: "#fffbeb",
+        titleColor: "#92400e",
+        bodyColor: "#78716c"
+      },
       {
         title: "华文假期班（11月&12月2027年）",
         id: "chinese-holiday-programme-2027",
