@@ -178,6 +178,15 @@ Through systematic training, students enhance analytical depth and precision in 
     specialProgrammeTitle: "Special Programmes",
     specialProgrammes: [
       {
+        title: "S1 Holiday Programme(2027)",
+        id: "S1-holiday-programme",
+        description: "3 Day Headstart programme for S1 students in the next academic year (2027)",
+        fullImage: "S1 Holiday Programme_26.jpeg",
+        backgroundColor: "#fffbeb",
+        titleColor: "#92400e",
+        bodyColor: "#78716c"
+      },
+      {
         title: "2027 Nov&Dec Holiday Programme",
         id: "2027-Nov&Dec-Holiday-Programme",
         description: "Structured 3-day holiday programme for different students, help to prepare students for the next academic year. Each lesson is specially curated to target weak spots and strengthen answering skills.",
