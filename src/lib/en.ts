@@ -178,6 +178,15 @@ Through systematic training, students enhance analytical depth and precision in 
     specialProgrammeTitle: "Special Programmes",
     specialProgrammes: [
       {
+        title: "2027 Nov&Dec Holiday Programme",
+        id: "2027-Nov&Dec-Holiday-Programme",
+        description: "Structured 3-day holiday programme for different students, help to prepare students for the next academic year. Each lesson is specially curated to target weak spots and strengthen answering skills.",
+        fullImage: "2027 Nov&Dec Holiday Programme_01.jpg",
+        backgroundColor: "#fef2f2",
+        titleColor: "#7f1d1d",
+        bodyColor: "#57534e"
+      },
+      {
         title: "O-Level Chinese Oral Booster Course (Apr 2026)",
         id: "o-level-oral-booster-2026",
         description: "10-lesson intensive oral training camp. Each lesson covers 2–3 oral topics drawn from current affairs and commonly tested themes. In-house materials provide key discussion points and high-frequency expressions. Every student gets individual practice time and personalised feedback—building exam rhythm, logical expression, and confident on-the-spot performance.",
