@@ -172,6 +172,15 @@ const zhContent: LocalizedContent = {
     ],
     specialProgrammeTitle: "特色课程",
     specialProgrammes: [
+      {
+        title: "华文假期班（11月&12月2027年）",
+        id: "chinese-holiday-programme-2027",
+        description: "为不同年级的学生提供帮助，利用假期时间巩固知识点和预备接下来学年",
+        fullImage: "2027 Nov&Dec Holiday Programme_01.jpg",
+        backgroundColor: "#fef2f2",
+        titleColor: "#7f1d1d",
+        bodyColor: "#57534e"
+      },
         {
         title: "华文假期班（11月&12月2026年）",
         id: "chinese-holiday-programme-2026",
